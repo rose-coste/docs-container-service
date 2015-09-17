@@ -56,13 +56,13 @@ The `Dockerfile` is at the heart of porting your application. This file tells Do
       password: <%= ENV['POSTGRES_PASSWORD'] %>
       host: db
 
-    test:
+    <!-- test:
       <<: *default
       database: myapp_test
 
     production:
       <<: *default
-      database: myapp_prod
+      database: myapp_prod -->
 
 
 ## Local bootstrap
@@ -72,8 +72,38 @@ Docker commands tend to be wordy so I like to create a script that will start a 
 
     # Assume Docker Toolbox (https://www.docker.com/toolbox)
 
-    docker-compose build
-    open https://$(boot2docker ip)
-    docker-compose up
+    # Create a VM specifically for this project, named "porting"
+    docker-machine create --driver virtualbox porting
+
+    # Load environment variables from Docker (links our shell to the porting VM)
+    eval "$(docker-machine env porting)"
+
+    # Let's remove all containers so we start with a blank slate
+    docker rm --force `docker ps -qa`
+
+    # Run the Postgresql container with a password (ensure update of database.yml)
+    docker run --name db -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+    # Run a Redis container for Sidekiq
+    docker run --name redis -d redis
+
+    # Build a container from this Rails app (using Dockerfile)
+    docker build -t myapp .
+
+    # Run database operations in a utility container
+    docker run -d --link db:postgres --link redis:redis myapp rake db:create db:schema:load db:migrate db:seed
+
+    # Run the Sidekiq process in it's own container
+    docker run -d --link db:postgres --link redis:redis myapp bundle exec sidekiq
+
+    # Start our Rails app on port 3000, and link redis and postgresql to the app.
+    docker run -d --link db:postgres --link redis:redis -p 3000:3000 myapp bundle exec thin start
+
+    # Shows a list of our containers in the porting machine
+    docker ps -a
+
+    # Open our web app in the browser
+    open http://$(dm ip porting):3000
+
 
 ## RCS
