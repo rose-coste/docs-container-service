@@ -1,11 +1,15 @@
-Container Design Philosophy
-============================
+---
+title: Container design philosophy
+slug: container-design-philosophy
+description: Best practices for container design, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
 
-Because the natural inclination of the
-technical community is to test the boundaries of a given technology, and
-some are more vocal than others, as expected, there is an unclear line
-as to what is an unwritten accepted standard by the community and what
-is heresy.
+Container design philosophy
+===========================
 
 As a general rule of thumb, the author believes that authoritative
 decisions from a design and development standpoint come directly from

@@ -1,3 +1,13 @@
+---
+title: Docker best practices: container linking
+slug: docker-best-practices-container-linking
+description: Docker best practices, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Docker best practices: container linking
 ========================================
 
