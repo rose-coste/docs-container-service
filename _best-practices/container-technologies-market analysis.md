@@ -83,3 +83,20 @@ implement the tools accordingly, based not only on the requirements you
 would need for you container offering, but more importantly, the
 popularity of the tool and its reception in the strong community that
 serves as its driving force.
+
+CONCLUSION FROM PART2: INTEGRATE
+
+Docker has spawned a slew of technical opportunities to revamp and
+reconstitute what datacenters and application stacks should look and
+operate like. There are varying degrees of features and capabilities
+that span and even spill over from one technology to the other, and
+noticing these subtleties is a very complex and tedious task. Figuring
+out which set of technologies will help you establish your future
+roadmap comes down to the types of users you’re trying to enable, as
+well as classes of workloads you wish to manage across your resources.
+
+It is the author’s ambition that this document has provided not just
+beneficial information with regards to using Docker correctly and
+efficiently, but that a light has been shined on how these varying
+tools function, how they're being received in the community, and how
+they compare with one another.
