@@ -1,3 +1,13 @@
+---
+title: Introduction to container technologies: registration and discovery of container services
+slug: container-technologies-registration-discover 
+description: Introduction to container technologies, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Introduction to container technologies: registration and discovery of container services
 ========================================================================================
 
