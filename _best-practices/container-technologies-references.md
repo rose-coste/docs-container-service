@@ -1,9 +1,10 @@
 Introduction to container technologies: suggested reading
 =========================================================
 
-These sources are referred to in the "Introduction to container technologies"
-series of best-practices articles. For deeper understanding of the topics introduced
-in those articles, read the sources directly.
+These sources are referred to in the "Introduction to container technologies", "Docker best practices",
+and "Container ecosystem"
+series of best-practices articles by Mike Metral. For deeper understanding of the topics introduced
+in those articles, read these sources directly.
 
 1. <http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/>
 
@@ -54,3 +55,31 @@ in those articles, read the sources directly.
 24. <http://www.sdxcentral.com/articles/news/madhu-venugopal-brent-salisbury-opendaylight-starts-open-shop-docker-startup/2014/10/>
 
 25. <http://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/>
+
+
+26. <https://docs.docker.com/articles/dockerfile_best-­practices/#run-­only-­one-­
+process-­per-­container>
+
+27. <http://martinfowler.com/articles/microservices.html>
+
+28. <https://docs.docker.com/userguide/dockerimages/>
+
+29. <https://docs.docker.com/articles/dockerfile_best-­‐practices/#build-­cache>
+
+30. <http://www.projectatomic.io/docs/docker-image-­author-­guidance/>
+
+31. <https://docs.docker.com/userguide/dockervolumes/>
+
+32. <http://docs.docker.com/userguide/dockervolumes/>
+
+33. <https://github.com/docker/docker/issues/7467>
+
+34. <http://www.slideshare.net/timothysc/apache-­coneu>
+
+35. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/services.md#how-­do-­they-­work>
+
+36. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/design/networking.md>
+
+37. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
+
+38. <https://twitter.com/solomonstre/status/492111054839615488>
