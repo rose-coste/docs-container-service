@@ -1,5 +1,15 @@
-Image Repository
-================
+---
+title: Docker best practices: image repository
+slug: docker-best-practices-image-repository
+description: Docker best practices, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
+Docker best practices: image repository
+=======================================
 
 Community images
 ----------------
@@ -12,8 +22,9 @@ by users have been uploaded to the Docker Hub Registry
 them.
 
 You can retrieve or pull an image by identifying the
-\<user/image\_name\> and passing it to Docker, i.e: \` docker pull
-cpuguy83/openvpn\`
+\<user/image\_name\> and passing it to Docker. For example, \` docker pull
+cpuguy83/openvpn\` asks for an image named `openvpn`,
+owned by a user named `cpuguy83`.
 
 The Docker Hub Registry also has official images from certain
 providers ranging from OS companies to software providers i.e. Ubuntu,

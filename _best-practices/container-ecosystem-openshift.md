@@ -1,3 +1,13 @@
+---
+title: Container ecosystem: OpenShift
+slug: container-ecosystem-openshift 
+description: Best practices for container ecosystems, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Container ecosystem: OpenShift
 ==============================
 

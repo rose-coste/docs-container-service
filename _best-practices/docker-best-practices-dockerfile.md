@@ -1,3 +1,13 @@
+---
+title: Docker best practices: Dockerfile
+slug: docker-best-practices-dockerfile
+description: Docker best practices, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Docker best practices: Dockerfile
 =================================
 
@@ -17,7 +27,7 @@ personalize it. Upon completion, you exit the container and use
 \`docker commit\` to commit a copy of the container to your local or
 remote registry.
 
-Using the update & commit methodology is the simplest way of an
+Using the update-and-commit methodology is the simplest way of an
 extending an image, but its not easy to maintain or share and it is
 definitely not the cleanest. Going the Dockerfile route is preferred
 as doing so allows you to utilize the \`docker build\` command to

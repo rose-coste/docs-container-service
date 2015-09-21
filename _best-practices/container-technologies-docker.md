@@ -1,3 +1,13 @@
+---
+title: Introduction to container technologies: Docker
+slug: container-technologies-docker
+description: Introduction to container technologies, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Introduction to container technologies: Docker
 ==============================================
 

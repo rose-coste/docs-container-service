@@ -1,3 +1,13 @@
+---
+title: Docker best practices: data and stateful applications
+slug: docker-best-practices-data-stateful-applications
+description: Docker best practices, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Docker best practices: data and stateful applications
 =====================================================
 

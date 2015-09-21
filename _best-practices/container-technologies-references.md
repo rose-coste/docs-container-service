@@ -1,5 +1,15 @@
-Introduction to container technologies: suggested reading
-=========================================================
+---
+title: Introduction to container ecosystems and technologies: suggested reading
+slug: container-technologies-references
+description: Introduction to container technologies, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
+Introduction to container ecosystems and technologies: suggested reading
+========================================================================
 
 These sources are referred to in the "Introduction to container technologies", "Docker best practices",
 and "Container ecosystem"

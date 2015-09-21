@@ -1,3 +1,13 @@
+---
+title: Container ecosystem: Kubernetes
+slug: container-ecosystem-kubernetes
+description: Best practices for container ecosystems, powered by the Rackspace Container Service
+author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+topics:
+  - docker
+  - beginner
+---
+
 Container ecosystem: Kubernetes
 ===============================
 
