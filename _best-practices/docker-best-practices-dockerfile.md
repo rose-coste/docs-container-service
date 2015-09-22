@@ -8,36 +8,47 @@ topics:
   - beginner
 ---
 
-Docker best practices: Dockerfile
-=================================
+# Docker best practices: Dockerfile
 
-To build a Docker image, application and dependency specifics aside,
-there are two primary methods to do so:
+You can save a customized Docker image in either of two ways:,
 
--   Update a container created from an image and commit the changes to an image
+-   Create a container from an image, update the container,
+    and commit the changes to an image
 
 -   Use a Dockerfile
 
-The update-and-commit route requires that one run a previously created
-Docker image that you’ve retrieved from either a public or private
-image registry and then instantiated the container on your host
+Specifics of your application and its dependencies can determine which
+of these methods you must use. If both options are available to you,
+consider using a Dockerfile.
+
+## Update and commit
+
+The update-and-commit method requires that you begin with a previously created
+Docker image that you have retrieved from a container
+image registry. Image registries can be public or private;
+you can read more about image registries at
+</docker-best-practices-image-repository/>.
+
+After you retrieve a container, you must
+instantiate the container on your host
 running the Docker daemon, preferably with an activated TTY. Once you
-have access to the container, you can make the required changes to
-personalize it. Upon completion, you exit the container and use
-\`docker commit\` to commit a copy of the container to your local or
-remote registry.
+have access to the container, you can make any changes required to
+personalize it. After you make those changes, you exit the container and
+save a copy of the container to your local or
+remote registry with \`docker commit\`.
 
-Using the update-and-commit methodology is the simplest way of an
-extending an image, but its not easy to maintain or share and it is
-definitely not the cleanest. Going the Dockerfile route is preferred
-as doing so allows you to utilize the \`docker build\` command to
-build images from scratch. In a Dockerfile you can prescribe the base
-OS for the container, in addendum to the instructions you’d like to
-execute inside the image from installing packages to setting &
+Using the update-and-commit methodology is the simplest way of
+extending an image, but the updated image is not easy to maintain or share.
+
+## Dockerfile
+
+Using a Dockerfile is the preferred method of creating and customizing your
+container images, as Dockerfile enables you to use
+the \`docker build\` command to
+build images from scratch. In a Dockerfile, you can prescribe the base
+operating system for the container. You can add the instructions you want to
+execute inside the image, such as installing packages and setting and
 configuring options.
-
-Sample Dockerfile
------------------
 
 Here is a snippet of a simple Dockerfile:
 
@@ -52,99 +63,114 @@ report, an image cannot have more than 127 layers regardless of the
 storage driver. This limitation is set globally to encourage
 optimization of the overall size of images (28).
 
-It is worth nothing that the base OS initially chosen
-tends to be a familiar OS that one is most accustomed to working with
-such as Ubuntu, CentOS, or Fedora.
+Most newcomers to containers choose to provide their containers with
+the base operating system that they are most accustomed to working with
+in non-container-based configurations. For example, Ubuntu, CentOS, and Fedora
+are common choices.
 
-However, it becomes evident that most of the interaction with the actual
-OS revolves around the filesystem layout and its binaries. For example,
-if you chose Ubuntu as your base OS, and you aren’t doing anything super
-extravagant in terms of the OS itself, then you could potentially switch
-to the Debian image as it will most likely have everything you need and
-can save you at least 100MB+ in size. Again, it is on a per case basis, but
-if you’re utilizing a bloated OS base when BusyBox could suffice, then
-you’re not only consuming more space than needed, you’re also adding
-time to Docker builds and Image Repository interaction.
+However, it becomes evident that most of the interaction with the container's
+operating system revolves around the filesystem layout and its binaries.
+For example,
+if you chose Ubuntu as your base operating system and you aren’t doing anything
+extravagant in terms of the operating system itself, then you could potentially
+switch to the Debian image as it will most likely have everything you need and
+can save you at least 100MB in size. You must investigate this on a per case basis,
+but if you are utilizing a bloated operating system base when BusyBox could suffice,
+then you are not only consuming more space than needed, you are also adding
+time to Docker builds and image repository interactions.
 
-Recommendations
----------------
+## Recommendations
 
 The following is a collection of unordered recommendations and tips
-that don’t get enough upfront attention when starting off with Docker.
-One should keep these tips in mind so that you can ultimately improve
+that don’t get enough upfront attention when starting off with Dockerfile.
+Keep these tips in mind so that you can ultimately improve
 creation and utilization of Dockerfiles to build your container images.
 
--   Use a .dockerignore file to exclude directories and/or files from
-    the build process
+-   Maintain a .dockerignore file to exclude directories and/or files from
+    the build process.
 
--   Keep the number of instructions/layers to a minimum as this
-    ultimately affects build performance and time
+-   Keep the number of instructions and layers to a minimum as this
+    ultimately affects build performance and time.
 
--   Consolidation of similar instructions into a single layer is
-    preferred (i.e. in the snippet from the previous example,
-    place the \`gem install sinatra\` in the preceding line.
+-   Consolidate similar instructions into a single layer.
+    For example, in the sample snippet of a simple Dockerfile,
+    \`gem install sinatra\` could be included in the line preceding it.
 
--   Build cache: During the process of building an image Docker will
-    step through the instructions in your Dockerfile executing each in
-    the order specified. As each instruction is examined Docker will
-    look for an existing image in its cache that it can reuse, rather
-    than creating a new (duplicate) image
+-   Take advantage of cacheing.
 
--   In the case of the ADD and COPY instructions, the contents of
+--  During the process of building an image, Docker steps
+    through the instructions in your Dockerfile, executing each instruction in
+    the order specified. As each instruction is examined, Docker looks
+    for an existing image in its cache that it can reuse, rather
+    than creating a new (duplicate) image.
+
+--  In the case of ADD and COPY instructions, the contents of
     the file(s) being put into the image are examined.
-    Specifically, a checksum is done of the file(s) and then that
-    checksum is used during the cache lookup. If anything has
-    changed in the file(s), including its metadata, then the cache
-    is invalidated.
+    Specifically, a checksum is created for the file(s) and then that
+    checksum is used during the cache lookup. If anything, including metadata, has
+    changed in the file(s), then the cache
+    is invalidated and a fresh copy of the file must be obtained.
 
--   Aside from the ADD and COPY commands, cache checking will not
+--  Aside from the ADD and COPY commands, cache checking does not
     look at the files in the container to determine a cache match.
     For example, when processing a \`RUN apt-get -y\` update
-    command the files updated in the container will not be
-    examined to determine if a cache hit exists. In that case just
-    the command string itself will be used to find a match (29).
+    command, the files updated in the container are not
+    examined to determine whether a cache hit exists. In that case, only
+    the command string itself is used to find a match (29).
+
+-   Build every time. Building is very fast because Docker re-uses
+    previously-cached build steps whenever possible.
+    By building every time, you can use containers as reliable artifacts.
+    For example,
+    you can go back and run a container from four changes ago to inspect a
+    problem, or you can run long tests on a version while editing the code.
 
 -   When testing an edit to your codebase, write a simple Dockerfile
-    describing your build process (usually in 5 to 10 lines), then
-    build a new container from source with \`docker build\`
-
--   Building is very fast because docker re-­‐uses previous build
-    steps whenever possible (see preceding "Build cache" tip). And
-    by building every time, you can use containers as reliable artifacts. For example,
-    you can go back and run the container from four changes ago to inspect a
-    problem, or run long tests on a version while editing the code.
+    describing your build process, then
+    build a new container from that source with \`docker build\`.
+    Such a Dockerfile is usually short, probably between 5 and 10 lines long.
 
 -   For a development environment, map your source code on the host to
-    container using a volume so that way you can use your editor of
+    a container using a volume. This enables you to use your editor of
     choice on the host and test right away in the container.
     This is done by mounting the current folder as a volume
-    **rather** than using the ADD command in the Dockerfile
+    rather than using the ADD command in the Dockerfile.
 
--   Know the Differences Between CMD and ENTRYPOINT. There are many details
-    of how the Dockerfile CMD and ENTRYPOINT
-    instructions work, and expressing exactly what you want is key
-    to ensuring users of your image have the right experience.
-    These two instructions are similar in that they both specify
-    commands that run in an image, but there’s an important
+-   Know the differences Between CMD and ENTRYPOINT.
+    Expressing exactly what you want is key
+    to ensuring that users of your image have the right experience.
+    The CMD and ENTRYPOINT nstructions are similar in that they both specify
+    commands that run in an image, but there is an important
     difference: CMD simply sets a command to run in the image if
     no arguments are passed to \`docker run\`, while ENTRYPOINT is
     meant to make your image behave like a binary. The rules are
     essentially:
 
--- If your Dockerfile uses only CMD, the provided command will be run
+-- If your Dockerfile uses only CMD, the specified command is executed
    if no arguments are passed to \`docker run\`.
 
 -- If your Dockerfile uses only ENTRYPOINT, the arguments passed to
-   docker run will always be passed to the entrypoint; the entrypoint
-   will be run if no arguments are passed to \`docker run\`.
+   \`docker run\` are always passed to the entrypoint; the entrypoint
+   is executed if no arguments are passed to \`docker run\`.
 
--- If your Dockerfile declares both ENTRYPOINT and CMD, and no arguments are passed to \`docker run\`, then the argument(s) to CMD will be passed to the declared entrypoint.
+-- If your Dockerfile declares both ENTRYPOINT and CMD
+   and no arguments are passed to \`docker run\`, then the argument(s)
+   to CMD are passed to the declared entrypoint.
 
--- Be careful with using ENTRYPOINT; it will make it more difficult to
-   get a shell inside your image. While it may not be an issue if your
+-- Be careful with using ENTRYPOINT; it can make it more difficult to
+   get a shell inside your image. While this may not be an issue if your
    image is designed to be used as a single command, it can frustrate or
    confuse users that expect to be able to use the idiom (30).
 
-For further best practices and the full set of Docker’s instructions,
-visit
-<https://docs.docker.com/articles/dockerfile\_best-­‐practices/>.
+## Resources
+
+For more Dockerfile best practices and the full set of Docker’s instructions,
+read Docker's
+[Best practices for writing Dockerfiles]
+(https://docs.docker.com/articles/dockerfile_best-practices/).
+
+For detailed background information about Docker best practices
+for the Rackspace Container Service,
+follow the links suggested at 
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).
