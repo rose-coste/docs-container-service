@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Container design philosophy
-===========================
+## Container design philosophy
 
 As a general rule of thumb, the author believes that authoritative
 decisions from a design and development standpoint come directly from
@@ -72,3 +71,11 @@ roles such as an app, database, cache layer, load balancer etc. rather
 than as individual processes (nginx, apache2, sshd etc.) – doing so,
 will highlight the strengths of a container + microservice
 architecture for your application’s stack.
+
+## Resources
+
+For detailed background information about
+the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

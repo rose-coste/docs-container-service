@@ -8,11 +8,9 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: container networking
-============================================================
+# Introduction to container technologies: container networking
 
-Weaveworks “Weave”
-------------------
+## Weaveworks “Weave”
 
 Weave "makes the network fit the application, not the other way round,"
 as the company CEO puts it. With Weave, Docker containers are all part
@@ -35,8 +33,7 @@ that they just raised
 \$5M in Series A, and it makes a compelling argument to considerably
 evaluate Weave as viable option.
 
-CoreOS’s “Flannel”
-------------------
+## CoreOS’s “Flannel”
 
 Flannel is positioned as CoreOS’ primary way to manage container
 networking via a private mesh network for the containers in a cluster,
@@ -56,8 +53,7 @@ experimental but don’t disregard Flannel’s presence in the market, as
 their roadmap looks very optimistic given that CoreOS plans to be a big player in
 the space.
 
-Metaswitch’s “Calico”
----------------------
+## Metaswitch’s “Calico”
 
 Project Calico “integrates seamlessly with the cloud orchestration
 system (such as OpenStack) to enable secure IP communication between
@@ -77,8 +73,7 @@ Calico and Docker, there are no short term plans to evolve the prototype
 and has put the drive and initiative in doing so, into the hands of the
 community.
 
-SocketPlane’s “SocketPlane”
----------------------------
+## SocketPlane’s “SocketPlane”
 
 Socketplane’s concept is to bring Open vSwitch to th Docker host so that one can
 “have a container that’s going to be able to manage the data path and
@@ -98,8 +93,7 @@ into a sound and promising technology. It has recently been made public
 that SocketPlane was purchased by Docker Inc and they plan to natively
 integrate with the Docker Inc portfolio (25).
 
-Comparison
-----------
+## Comparison
 
 It is very early in the Docker ecosystem to tell which
 container-­‐networking solution will prevail, let alone which are
@@ -111,3 +105,11 @@ seriously evaluate and test.
 
 **Current Recommendation** Weave (based on project attention, evolution
 and funding)
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

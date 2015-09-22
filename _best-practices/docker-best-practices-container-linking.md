@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Docker best practices: container linking
-========================================
+# Docker best practices: container linking
 
 Docker has a concept known as “linking” that allows you to connect
 containers via a socket or through a hostname using a sender and
@@ -51,8 +50,7 @@ such as the following:
 In addition to the environment variables, Docker adds a host entry for
 the source container to the /etc/hosts file.
 
-Ambassador Pattern
-------------------
+## Ambassador pattern
 
 In Docker linking, a pattern emerged that allows the proxying of
 connections between a server and client container. This separate proxy
@@ -68,8 +66,7 @@ as the community is concerned as it’s not necessarily adding any benefit
 that links don’t already provide, and it further complicates the
 architecture without solving the underlying issues at hand.
 
-Issues with Linking
--------------------
+## Issues with Linking
 
 As provocative as linking seems, it seems to be met with a couple of
 different nuances and issues when you begin to think of linking
@@ -117,5 +114,14 @@ premonition of the connection itself, and its stability and benefits
 just aren’t ready to be integrated into
 mission-critical/production-grade stacks.
 
-An alterative that is becoming an industry standard is to use a
-service registration and discovery tool.
+An alternative that is becoming an industry standard is to use a
+service registration and discovery tool. You can read more about this at
+[Introduction to container technologies: registration and discovery of container services] (/container-technolgies-registration-discover/).
+
+## Resources
+
+For detailed background information about Docker best practices
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

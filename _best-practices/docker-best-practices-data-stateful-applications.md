@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Docker best practices: data and stateful applications
-=====================================================
+# Docker best practices: data and stateful applications
 
 As soon as one gets over the initial hurdle of what containers can
 provide, the next natural step is to build an actual stack that could
@@ -21,8 +20,7 @@ stateful information such as a backend database layer or data in
 general that needs to be preserved, used and possibly written to logs,
 containers aren’t the best match, yet.
 
-Datastore and logs
-------------------
+## Datastore and logs
 
 There are strong recommendations that you should never store data or
 logs in a container as the longevity of a container is short-­‐lived
@@ -130,8 +128,7 @@ or strictly use Data volumes as a means to map to a host directory or
 a file from a container, that you can curate and manage external to
 Docker.
 
-Block Storage
--------------
+## Block storage
 
 Given the previous section’s description of Docker volumes to manage
 your data, and the assumption that you are operating on a cloud
@@ -151,3 +148,11 @@ running containers or not.
 However, you do have the option to map a Data volume container to a
 block storage device and share said container with other containers without having
 to introduce an additional management layer.
+
+## Resources
+
+For detailed background information about Docker best practices
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

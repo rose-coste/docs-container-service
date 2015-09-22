@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: container operating systems
-===================================================================
+# Introduction to container technologies: container operating systems
 
 With the success and popularity of containers made by Docker, modern
 operating systems have emerged embracing the container culture. These
@@ -20,11 +19,10 @@ have evolved the operating model users are accustomed to by moving
 away from deploying applications at the application layer to deploying
 applications inside containers operated by Docker. More simply put,
 applications can be thought of as self-contained binaries that can be
-moved around environments accordingly based on your requirements of
-QOS, policy, affinity, replication etc.
+moved around environments accordingly based on your requirements such as
+quality of service, policy, affinity, and replication.
 
-CoreOS
-------
+## CoreOS
 
 CoreOS is a new Linux distribution that has been architected to provide
 features needed to run modern infrastructure stacks via containers
@@ -48,8 +46,7 @@ its flagship products:
     level, so it functions as a simple orchestration system for systemd
     units across your cluster.
 
-Red Hat Project Atomic
-----------------------
+## Red Hat Project Atomic
 
 Red Hat’s Project Atomic facilitates application-centric IT architecture
 by providing a end-to-end solution for deploying containerized
@@ -67,3 +64,11 @@ base distributions. This includes systemd, which provides
 container dependency management and fault recovery. It also includes
 journald, which provides secure aggregation and attribution of container
 logs (6).
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

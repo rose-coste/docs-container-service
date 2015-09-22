@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Container ecosystem: Docker Swarm
-=================================
+## Container ecosystem: Docker Swarm
 
 A quick Google search on Docker Swarm primarily reveals sites discussing
 its announcement, but blogs, articles, and community forums centered on
@@ -44,3 +43,11 @@ interest in Swarm, and is choosing to consume, learn, interact and
 design their stacks for their orchestrator of choice directly. What
 the future holds for Swarm is still to be determined, but the gist of
 it today does not seem to be offering anything worth adopting.
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

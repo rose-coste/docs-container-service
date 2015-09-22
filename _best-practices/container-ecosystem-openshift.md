@@ -1,6 +1,6 @@
 ---
 title: Container ecosystem: OpenShift
-slug: container-ecosystem-openshift 
+slug: container-ecosystem-openshift
 description: Best practices for container ecosystems, powered by the Rackspace Container Service
 author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
 topics:
@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Container ecosystem: OpenShift
-==============================
+# Container ecosystem: OpenShift
 
 RedHat’s OpenShift has always been associated with managing your
 applications at the PaaS layer. With their three offerings--OpenShift
@@ -39,3 +38,11 @@ adoption of RedHat’s container and virtualization products, if both
 types of workloads are aimed to be collocated. How OpenShift’s
 adoption of Kubernetes and its intent to be a wrapper for it play out
 in the long run of the “PaaS war” is sure to be an interesting one.
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).
