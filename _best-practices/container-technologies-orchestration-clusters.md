@@ -351,6 +351,11 @@ Managers**
 
 **Current Recommendation:** Kubernetes
 
+XXXXXXXX
+2 images fit in this section somewhere
+Nate is rebuilding them from https://github.com/rose-coste/whitepapers/tree/master/images
+XXXXXXXXX
+
 ## Resources
 
 For detailed background information about the ecosystem of container technologies
