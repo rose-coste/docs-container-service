@@ -1,6 +1,6 @@
 ---
 title: Introduction to container technologies: registration and discovery of container services
-slug: container-technologies-registration-discover 
+slug: container-technologies-registration-discover
 description: Introduction to container technologies, powered by the Rackspace Container Service
 author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
 topics:
@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: registration and discovery of container services
-========================================================================================
+# Introduction to container technologies: registration and discovery of container services
 
 Service registration discovery is the centerpiece in systems that are
 both distributed and service oriented. Pinpointing how nodes in a cluster
@@ -28,8 +27,7 @@ The technologies described below are the current front-­‐runners in the
 industry with regards to service registration, and in turn, service
 discovery.
 
-Apache’s “Zookeeper”
---------------------
+## Apache’s “Zookeeper”
 
 Zookeeper is a distributed configuration service synchronization service
 and naming registry for large distributed systems. ZooKeeper was a
@@ -42,8 +40,7 @@ cluster.
 Many projects use Zookeeper, including: Hadoop’s HBase, Yahoo and
 Rackspace’s Email & Apps.
 
-CoreOS’ “etcd”
---------------
+## CoreOS’ “etcd”
 
 Etcd is a distributed key/value store used for service discovery and shared
 configuration. It is aimed to be a simple implementation of the Raft
@@ -57,8 +54,7 @@ sequential consistency based on a quorum of nodes.
 Many projects use etcd, including: Google’s Kubernetes, Pivotal’s Cloud
 Foundry, Rackspace’s Mailgun, Apache Mesos & Mesosphere DCOS (7).
 
-Hashicorp’s “Consul”
--------------------
+## Hashicorp’s “Consul”
 
 Consul is a tool for service discovery and configuration. It is distributed,
 highly available, and extremely scalable. Key features include:
@@ -82,14 +78,13 @@ highly available, and extremely scalable. Key features include:
     and can support any number of regions without complex
     configuration (9).
 
-It holds Consistency+Partition Tolerance (CP) architecture, in the CAP
+Consul holds Consistency+Partition Tolerance (CP) architecture, in the CAP
 theorem context, and implements the Raft protocol.
 
 Public projects or companies using Consul were not found in a limited
 search performed.
 
-Comparison
-----------
+## Comparison and recommendations
 
 | Org       | Tool      | Client/Server  Architecture | Primitive Key/Value Store | Basic  Service Discovery | Advanced Service Discovery | Consistency | Language |
 |-----------|-----------|-----------------------------|---------------------------|--------------------------|----------------------------|-------------|----------|
@@ -117,3 +112,11 @@ In terms of which technology to use:
     using etcd far more.
 
 **Current Recommendation** etcd
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

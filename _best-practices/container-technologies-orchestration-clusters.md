@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: orchestration and management of container clusters
-==========================================================================================
+# Introduction to container technologies: orchestration and management of container clusters
 
 Orchestrating and managing a cluster of Docker containers is an emerging
 trend that is not only very competitive with many companies, but one
@@ -24,8 +23,7 @@ It is highly recommended that your respective teams perform the proper
 analysis of which option to choose give the use case you intend to
 fulfill, as well as the scale yo wish to operate.
 
-Docker’s “Compose”
-------------------
+## Docker’s “Compose”
 
 Compose, previously known as “Fig” prior to its acquisition, is a simple
 orchestration framework really aimed to allow the definition of fast,
@@ -49,8 +47,7 @@ usage and the lack of ability to create a long-term vision around it
 tend to minimize the actual legitimacy of adopting it as a container
 orchestration technology.
 
-Prime Directive’s “Flynn”
--------------------------
+## Prime Directive’s “Flynn”
 
 Prime Directive labels Flynn as “the product that ops provides to
 developers (11).” They believe that “ops should be a product team, not
@@ -78,8 +75,7 @@ is to have Flynn help you run the database service so you don’t have to.
 Sponsors and users of Flynn include but are not limited to: Coinbase,
 Shopify, and CenturyLink.
 
-OpDemand’s “Deis”
------------------
+## OpDemand’s “Deis”
 
 Deis is an open-source PaaS that facilitates the deployment and
 management of apps. It is built on Docker and CoreOS (including etcd,
@@ -101,8 +97,7 @@ Deis as the front-runner in Heroku-like projects.
 Users of Deis include small to medium businesses and tech companies, but
 no major companies have announced their use of it.
 
-ClusterHQ’s “Flocker”
----------------------
+## ClusterHQ’s “Flocker”
 
 Flocker is an open-source data volume and multi-host container
 manager that supports and works with Docker’s Compose (a.k.a Fig) file
@@ -127,8 +122,7 @@ In addition to the ZFS properties, Flocker imposes a network proxy across
 all of the Flocker nodes to handle container linking, storage mapping
 and user interaction throughout the cluster.
 
-Cloudsoft’s “Clocker”
----------------------
+## Cloudsoft’s “Clocker”
 
 Clocker is an open source project that enables users to spin up Docker
 containers, without generating excess containers, in a cloud-agnostic
@@ -168,8 +162,7 @@ instructions. Clocker then is essentially a blueprint for Brooklyn with
 extra intelligence geared at configuring and managing Docker hosts and
 containers.
 
-Mesosphere’s “Marathon”
------------------------
+## Mesosphere’s “Marathon”
 
 Marathon is a cluster-­‐wide init and control system for services in
 cgroups or Docker containers. It requires and is based on Apache Mesos
@@ -201,8 +194,7 @@ these particular toolsets.
 Many major companies are using Marathon including: Airbnb, eBay,
 Groupon, OpenTable, Paypal an Yelp.
 
-Google’s “Kubernetes”
----------------------
+## Google’s “Kubernetes”
 
 Kubernetes is a system for managing containerized clusters applications
 across multiple hosts, providing basic mechanisms for deployment,
@@ -300,11 +292,7 @@ tracked projects on Github, so expect many changes in not only its
 functionality, stability and supported use cases, but also in the amount
 of technologies working on becoming highly interoperable with Kubernetes.
 
-One-Offs
---------
-
-Docker’s “Swarm”
-----------------
+## Docker’s “Swarm”
 
 Swarm is a tier aimed to provide a common interface onto the many
 orchestration and scheduling frameworks available. It serves as
@@ -323,8 +311,7 @@ Docker. It currently does not provide all the
 features to say something of the likes of Kubernetes and its usage and
 place in the ecosystem is still to be determined.
 
-Comparison
-----------
+## Comparison and recommendations
 
 | Org             | Tool       | One  Host (nano) | Up to  Tens of Hosts (micro) | Up to  Hundreds of Hosts (medium) | Up to  Thousands of Hosts (large) |
 |-----------------|------------|------------------|------------------------------|-----------------------------------|-----------------------------------|
@@ -363,3 +350,11 @@ Managers**
 **Figure 2 -­‐ Venn Diagram of Container Orchestrator and Managers**
 
 **Current Recommendation:** Kubernetes
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

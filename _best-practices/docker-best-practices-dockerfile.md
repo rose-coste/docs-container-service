@@ -171,6 +171,6 @@ read Docker's
 
 For detailed background information about Docker best practices
 for the Rackspace Container Service,
-follow the links suggested at 
+follow the links suggested at
 [Introduction to container ecosystems and technologies: suggested reading]
 (/container-technologies-references/).

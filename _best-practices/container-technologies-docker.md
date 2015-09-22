@@ -8,11 +8,9 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: Docker
-==============================================
+# Introduction to container technologies: Docker
 
-Background
-----------
+## Background
 
 Container technology has been around for many years but its popularity
 really came to fruition through Docker: an open-source project
@@ -36,8 +34,7 @@ to the scalable, dynamic and agile technologies that similarly power the
 infrastructure and applications at tech giants such as Facebook, Google
 and Amazon.
 
-Overview
---------
+# Overview
 
 Docker is based on Linux Containers (LXC), which is a simplified
 virtualization environment that allows you to run multiple, isolated
@@ -104,8 +101,7 @@ Docker has started a forward progression of IT infrastructure and how we
 construct the applications that run on it to truly be very flexible in
 various aspects more than ever before.
 
-Basic Concepts
---------------
+## Basic concepts
 
 -    **Container**: The technology that allows the deployment and
      execution of an application and includes its dependencies, user files
@@ -128,8 +124,7 @@ Basic Concepts
       located at *https://registry.hub.docker.com* but a private, local version
       of it can be run if needed.
 
-Operational Concepts
---------------------
+## Operational concepts
 
 Recall that containers share a common operating system kernel.
 Therefore, to allow that each container have some form of isolation,
@@ -151,8 +146,7 @@ following concepts allow for that:
      from one environment to another, much like the code repository system
      git operates.
 
-Current Container Philosophy
-----------------------------
+## Current container philosophy
 
 Since Docker and the ecosystem is currently a emerging field, it is
 worth noting that containers are not intended to be a replacement for
@@ -178,3 +172,11 @@ to aid with, let alone which technologies they respectfully tend to
 interoperate with, is still to be determined. It is the author’s opinion
 that throughout 2015, the community will make it known which
 technologies are meant to stick and which should be shelved.
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

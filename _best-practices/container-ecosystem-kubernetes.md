@@ -8,11 +8,9 @@ topics:
   - beginner
 ---
 
-Container ecosystem: Kubernetes
-===============================
+## Container ecosystem: Kubernetes
 
-Community Status
-----------------
+# Community status
 
 As detailed in “State of the Union: Containers – Part 1,” Kubernetes
 is still the front-runner for how to manage and orchestrate
@@ -27,8 +25,7 @@ its adoption, the community is showing its vested interest:
 as of April 2015, Kubernetes averaged around 400-500 commits per
 week and had almost 300 contributors – a very substantial following.
 
-Operating Model
----------------
+## Operating model
 
 There is lots of material covering what Kubernetes’ technical
 capabilities are and what its purpose is, however, we want to take the
@@ -57,15 +54,14 @@ containers, including the adherence of requirements such as resource
 allocation for containers, affinity, replication, load balancing etc. –
 anything more than that is beyond the scope of Kubernetes.
 
-Kubernetes-specific functionality
----------------------------------
+## Kubernetes-specific functionality
 
 Kubernetes does not directly intend to reinvent core Docker
 functionality, but it does establish its own slightly divergent
 semantics for concepts such as volumes and container communication etc.,
 an in some cases, it does have its own implementation of the concept.
 
-#### Volumes
+### Volumes
 
 With regards to Docker volumes, we’ve learned in this report about Data
 volumes and Data volume containers. With Data volumes, you can either
@@ -91,7 +87,7 @@ volume containers are ultimately passive containers that cannot only be
 very unintuitive to understand from a user perspective, but could create
 corner cases and potentially be problematic for management systems.
 
-#### Discovery
+### Discovery
 
 For container service discovery, specifically in a pod, Kubernetes does
 not directly use Docker links as they don’t do well outside of a single
@@ -121,7 +117,7 @@ by the networking mechanisms described in the proceeding section.
 Lastly, lets not forget that 3rd party tools such as etcd, Zookeeper and
 Consul are also viable options.
 
-#### Networking
+### Networking
 
 Kubernetes deviates from the default Docker networking model. The goal
 of Kubernetes networking model is to allow each pod to have an IP in a
@@ -144,7 +140,7 @@ We can achieve the IP-per-pod model via the prescribed network
 requirements imposed by Kubernetes by allocating each host (minion) with
 its own subnet in an overlay network that can enable containers to
 communicate with the host and any other networks available in the
-enviromnet. A common network split is to allocate the overlay a
+environment. A common network split is to allocate the overlay a
 cluster-wide /16 and then divvy up a /24 for each minion. Once you
 lay out your network space, you can implement the overlay and configure a
 new bridge for the Docker host to use within it. Some tools that are
@@ -160,3 +156,11 @@ other containers on the same host, as opposed to also being able to
 communicate with other machines in the network as well. Furthermore, it
 may even be the case that conflicts and confusion arise due to different
 Docker hosts using the same network space and configuration.
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

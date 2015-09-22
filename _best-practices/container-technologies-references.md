@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Introduction to container ecosystems and technologies: suggested reading
-========================================================================
+## Introduction to container ecosystems and technologies: suggested reading
 
 These sources are referred to in the "Introduction to container technologies", "Docker best practices",
 and "Container ecosystem"

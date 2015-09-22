@@ -8,8 +8,7 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: market analysis
-=======================================================
+# Introduction to container technologies: market analysis
 
 This report is intended to cover and educate on the various
 technologies emerging in and around the container space without deep
@@ -35,8 +34,7 @@ discussions, articles and blog posts, and accrediting the exact source
 has proven to not be fully possible because of the author’s lack of not
 noting the source.
 
-Overview
---------
+## Overview
 
 Th hype and obsession of containers in the last two years becomes evident
 when you think of IT infrastructure from a traditional virtualization
@@ -64,8 +62,7 @@ system, you can have as many as four-to-six times the number of
 server application instances as you can using Xen or KVM VMs on the same
 hardware” (1).
 
-Analysis
---------
+## Analysis
 
 The immense evolution that containers are bringing forth has created a
 space for a slew of technologies and tools to emerge, particularly at
@@ -110,3 +107,11 @@ beneficial information with regards to using Docker correctly and
 efficiently, but that a light has been shined on how these varying
 tools function, how they're being received in the community, and how
 they compare with one another.
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

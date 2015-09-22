@@ -8,10 +8,10 @@ topics:
   - beginner
 ---
 
-Introduction to container technologies: scheduling and management of services and resources
-===========================================================================================
+# Introduction to container technologies: scheduling and management of services and resources
 
-Service/Resource Schedulers and Managers on a cluster are tools that are
+Within a container cluster, service and resource schedulers and managers
+are tools that are
 aware of the underlying resources available, are capable of placing
 tasks across the cluster in
 a specified and expected manner, abide by rules and constraints, and can
@@ -42,8 +42,7 @@ full orchestration of containers.
 The technologies described below are the current front-runners in the
 industry with regards to service/resource scheduling.
 
-CoreOS’ “Fleet”
----------------
+## CoreOS’ “Fleet”
 
 Fleet is a distributed init system based on etcd for its manifest of
 tasks and systemd to do the task execution. It can be seen as an extension
@@ -55,8 +54,7 @@ by properties such as ensuring that units are deployed together on the
 same machine, forbid colocation if necessary and deploy to specific
 machines based on metadata and attributes.
 
-Apache’s “Mesos”
-----------------
+## Apache’s “Mesos”
 
 Mesos is a distributed systems kernel. It is built using the same
 principles as the Linux kernel, only at a different level of abstraction.
@@ -71,8 +69,8 @@ workloads (a.k.a frameworks) to run top of it.
 Some of the biggest technology companies such as HubSpot and Twitter
 are active users and advocates of Mesos.
 
-Comparison
-----------
+## Comparison and recommendations
+
 | Org    | Tool  | Req. Supplied Membership | Basic Task Orchestration | Advanced Task Orchestration | Up to  Hundreds of Hosts | Up to  Thousands of Hosts | Language |
 |--------|-------|--------------------------|--------------------------|-----------------------------|--------------------------|---------------------------|----------|
 | CoreOS | Fleet |             ✓            |             ✓            |                             |             ✓            |                           | Go       |
@@ -102,3 +100,11 @@ In terms of which technology to use:
     traction.
 
 **Current Recommendation** Mesos
+
+## Resources
+
+For detailed background information about the ecosystem of container technologies
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).

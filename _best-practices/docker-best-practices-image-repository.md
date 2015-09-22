@@ -8,8 +8,8 @@ topics:
   - beginner
 ---
 
-Docker best practices: image repository
-=======================================
+# Docker best practices: image repository
+
 Creating containers from saved container images enables you to
 quickly create containers from a consistent starting point.
 This is similar to the advantage that [Rackspace Cloud Images] (https://developer.rackspace.com/docs/user-guides/infrastructure/cloud-config/compute/cloud-images-product-concepts/image-properties/) provides when you
@@ -21,8 +21,7 @@ a manual, multi-step process.
 You can create your containers from publicly-available images saved by the
 community or from custom images you saved privately for your own reuse.
 
-Community images
-----------------
+## Community images
 
 One of the main advantages of using Docker containers is that
 the community has created
@@ -49,8 +48,7 @@ You can pull official images with shortened calls.
 For example, \`docker pull mysql\` asks for all official images
 contributed by MySQL.
 
-Personal images
----------------
+## Personal images
 
 You can upload your own custom images to several repositories, including
 the [Docker Hub Registry] (https://registry.hub.docker.com/),
@@ -72,3 +70,11 @@ Docker registry there is an image for that too. Once you’ve got it
 running, the only step that you are required to change is to login to
 your private registry as opposed to the central one. That switch is as
 easy as \`docker login http(s)://\<YOUR\_DOMAIN\>:\<PORT\>\`.
+
+## Resources
+
+For detailed background information about Docker best practices
+for the Rackspace Container Service,
+follow the links suggested at
+[Introduction to container ecosystems and technologies: suggested reading]
+(/container-technologies-references/).
