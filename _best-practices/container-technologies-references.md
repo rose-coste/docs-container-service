@@ -91,4 +91,4 @@ xx 27. <http://martinfowler.com/articles/microservices.html>
 
 37. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
 
-38. <https://twitter.com/solomonstre/status/492111054839615488>
+xx 38. <https://twitter.com/solomonstre/status/492111054839615488>
