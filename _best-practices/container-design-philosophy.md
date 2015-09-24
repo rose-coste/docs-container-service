@@ -10,43 +10,26 @@ topics:
 
 # Container design philosophy
 
-As a general rule of thumb, the author believes that authoritative
-decisions from a design and development standpoint come directly from
-Docker Inc. themselves, primarily from Docker CTO Solomon Hykes. Though there
-are several voices in the container industry, Hykes' opinions around
-suggestions tend to be well received. The relationship between Solomon Hykes
-and the Docker community is similar to that of Linus Torvalds with the
-Linux Kernel community. However, since Docker Inc. is in fact a business,
-one can expect that Hykes has a responsibility to his investors and
-himself to position all of Docker’s offerings as the preferred
-methodology. As one can imagine in any scenario in which advice comes from a
-profit-motivated entity, you should take this advice as a starting point and
-then do your own investigation to find the approach that works best for you.
+Creating new containers is easy. What can be difficult is deciding how to divide your workload most effectively among many containers.
+
+## Initial design suggestions
+
+As a general rule of thumb, the author believes that authoritative decisions from a design and development standpoint come directly from Docker, Inc., primarily from Docker CTO Solomon Hykes. Though there are several voices in the container industry, Hykes' opinions and suggestions tend to be well received. The relationship between Solomon Hykes and the Docker community is similar to that of Linus Torvalds with the Linux kernel community. However, since Docker Inc. is in fact a business, one can expect that Hykes has a responsibility to his investors and himself to position all of Docker’s offerings as the preferred methodology. As one can imagine in any scenario in which advice comes from a
+profit-motivated entity, you should take this advice as a starting point and then do your own investigation to find the approach that works best for you.
 
 ## One process per container
 
-Docker’s “Best Practices” guide suggests that you
-“run only one process per container [(1)](#resources).” Though it initially seems
-to be simple design decision that you could easily overlook, this concept has
-been met with various opinions,
-discussions, and interpretation in the community.
+Docker’s “Best Practices” guide suggests that you “run only one process per container [(1)](#resources).” Though this initially seems to be a simple design decision that you could easily overlook, this concept has been met with various opinions, discussions, and interpretation in the community.
 
-Though you can
-actually run more than one process per Docker container, some believe
-that this diverges from the simple packaging and ease-of-use that
-containers are supposed to provide. Confusion about this philosophy stems
-primarily from newbies wanting to find a relatable manner to use
-containers: their natural instinct is to treat it as a virtual machine that they
-would SSH into, hence the necessity for multiple processes representing at least
-the machine's true workload (such as a database)
-and the infrastructure of tools (such as SSH) that
-enable access to that workload. However,
+Though you can actually run more than one process per Docker container, some believe that this diverges from the simple packaging and ease-of-use that containers are supposed to provide. Confusion about this philosophy stems primarily from newcomers to the field who want to find a sensible way to use containers: their natural instinct is to treat it as a virtual machine that they would SSH into, hence the necessity for multiple processes representing at least the machine's true workload (such as a database)
+and the tools (such as networking and security tools) that
+enable productive access to that workload. However,
 once one realizes that there are other methods of working with a
 container (such as enforcing proper logs and using development containers with
 a TTY for shell interaction) this hurdle of
 packing many different processes into a container is no longer needed.
 
-When this insight is realized, the offering that containers provide really
+When this insight is realized, the benefit that containers provide really
 shines through and the instinct to create monolithic packages, such as
 one would do with a virtual machine, becomes less relevant. Thus, the adoption of a
 microservice architecture becomes prominent as its relationship to
@@ -78,17 +61,23 @@ From both a mental and a technical
 standpoint, it is easier to manage and use Docker containers as
 roles rather than by the names of
 individual processes such as nginx, apache2, or sshd.
-Referring to Docker containers by roles such as
+Referring to Docker containers by their roles such as
 app, database, cache, or load balancer
-takes advantage of the strengths of a container + microservice
+takes advantage of the flexibility and strengths of a container + microservice
 architecture for your application’s stack.
 
 <a name="resources"></a>
 ## Resources
 
+*Numbered citations in this article*
+
 1. <https://docs.docker.com/articles/dockerfile_best-practices/#run-only-one-process-per-container>
 
 2. <http://martinfowler.com/articles/microservices.html>
+
+*Other recommended reading*
+
+- <http://www.forbes.com/sites/alexkonrad/2015/07/01/meet-docker-founder-solomon-hykes/>
 
 In addition to *best-practices* articles such as this one,
 Rackspace Container Service documentation includes *tutorials* and *references*:

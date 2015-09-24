@@ -186,10 +186,14 @@ week and a very substantial following of almost 300 contributors.
 <a name="resources"></a>
 ## Resources
 
+*Numbered citations in this article*
+
 1. <http://www.slideshare.net/timothysc/apache-­coneu>
 2. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/services.md#how-­do-­they-­work>
 3. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/design/networking.md>
 4. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
+
+*Other recommended reading*
 
 - <http://kubernetes.io/>
 - [Docker best practices: data and stateful applications]    (/docker-best-practices-data-stateful-applications/)

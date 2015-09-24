@@ -52,7 +52,11 @@ it today does not seem to be offering anything worth adopting.
 <a name="resources"></a>
 ## Resources
 
+*Numbered citations in this article*
+
 1. <https://twitter.com/solomonstre/status/492111054839615488>
+
+*Other recommended reading*
 
 - [Introduction to container technologies: orchestration and management of container clusters]
 (/container-technologies-orchestration-clusters)
