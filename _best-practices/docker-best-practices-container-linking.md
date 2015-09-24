@@ -120,8 +120,12 @@ service registration and discovery tool. You can read more about this at
 
 ## Resources
 
-For detailed background information about Docker best practices
-for the Rackspace Container Service,
-follow the links suggested at
-[Introduction to container ecosystems and technologies: suggested reading]
-(/container-technologies-references/).
+In addition to *best-practices* articles such as this one,
+Rackspace Container Service documentation includes *tutorials* and *references*:
+
+* For step-by-step demonstrations, explore the *tutorials* collection.
+* For detailed descriptions of reference architectures designed
+  for specific use cases,
+  explore the *references* collection.
+* For discussions of key ideas, recommendations of useful methods and tools, and
+  general good advice, explore the *best-practices* collection.

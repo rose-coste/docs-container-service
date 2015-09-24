@@ -164,13 +164,12 @@ creation and utilization of Dockerfiles to build your container images.
 
 ## Resources
 
-For more Dockerfile best practices and the full set of Docker’s instructions,
-read Docker's
-[Best practices for writing Dockerfiles]
-(https://docs.docker.com/articles/dockerfile_best-practices/).
+In addition to *best-practices* articles such as this one,
+Rackspace Container Service documentation includes *tutorials* and *references*:
 
-For detailed background information about Docker best practices
-for the Rackspace Container Service,
-follow the links suggested at
-[Introduction to container ecosystems and technologies: suggested reading]
-(/container-technologies-references/).
+* For step-by-step demonstrations, explore the *tutorials* collection.
+* For detailed descriptions of reference architectures designed
+  for specific use cases,
+  explore the *references* collection.
+* For discussions of key ideas, recommendations of useful methods and tools, and
+  general good advice, explore the *best-practices* collection.
