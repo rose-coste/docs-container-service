@@ -43,7 +43,7 @@ distributed, and possibly a vector that Docker plans on productizing
 and monetizing from in some form in the future, so long as the user
 doesn’t switch directly to the orchestrating backend.
 
-However, as stated previously, the community hasn’t really shown much
+However, the community hasn’t really shown much
 interest in Swarm, and is choosing to consume, learn, interact and
 design their stacks for their orchestrator of choice directly. What
 the future holds for Swarm is still to be determined, but the gist of
@@ -53,6 +53,10 @@ it today does not seem to be offering anything worth adopting.
 ## Resources
 
 1. <https://twitter.com/solomonstre/status/492111054839615488>
+
+- [Introduction to container technologies: orchestration and management of container clusters]
+(/container-technologies-orchestration-clusters)
+- <https://docs.docker.com/swarm/>
 
 In addition to *best-practices* articles such as this one,
 Rackspace Container Service documentation includes *tutorials* and *references*:
