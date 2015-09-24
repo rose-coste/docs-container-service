@@ -162,6 +162,7 @@ creation and utilization of Dockerfiles to build your container images.
    image is designed to be used as a single command, it can frustrate or
    confuse users that expect to be able to use the idiom (30).
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

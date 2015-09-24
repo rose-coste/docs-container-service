@@ -56,6 +56,7 @@ datacenter, stack and application to accommodate the nature of varying
 workloads from different user bases whether it be in VMs, containers,
 or both.
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

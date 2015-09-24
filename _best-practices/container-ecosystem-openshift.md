@@ -39,6 +39,7 @@ types of workloads are aimed to be collocated. How OpenShift’s
 adoption of Kubernetes and its intent to be a wrapper for it play out
 in the long run of the “PaaS war” is sure to be an interesting one.
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

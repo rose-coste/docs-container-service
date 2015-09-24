@@ -188,6 +188,7 @@ interoperate with, is still to be determined. It is the author’s opinion
 that throughout 2015, the community will make it known which
 technologies are meant to stick and which should be shelved.
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

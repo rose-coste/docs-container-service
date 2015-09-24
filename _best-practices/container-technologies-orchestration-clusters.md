@@ -356,6 +356,7 @@ XXXXXXXX
 Nate is rebuilding them from https://github.com/rose-coste/whitepapers/tree/master/images
 XXXXXXXXX
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

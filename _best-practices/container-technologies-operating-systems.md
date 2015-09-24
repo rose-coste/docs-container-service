@@ -65,6 +65,7 @@ container dependency management and fault recovery. It also includes
 journald, which provides secure aggregation and attribution of container
 logs (6).
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

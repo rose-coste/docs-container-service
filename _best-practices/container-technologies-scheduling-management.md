@@ -101,6 +101,7 @@ In terms of which technology to use:
 
 **Current Recommendation** Mesos
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,
