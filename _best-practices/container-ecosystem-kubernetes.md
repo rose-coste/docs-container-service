@@ -11,7 +11,7 @@ topics:
 ## Container ecosystem: Kubernetes
 
 Kubernetes, from Google, is a a tool for managing and orchestrating containers
-withing a stack. Kubernetes works with Docker but
+within a stack. Kubernetes works with Docker but
 they differ from each other in key ways.
 
 ## Operating model
@@ -31,7 +31,7 @@ resources, and their lifecycles. Without going into too much fine-grained detail
 containers that
 are scheduled onto the same host…[that] facilitate data sharing and
 communication [by way of] shared mount point’s, [and] network namespace
-[to create] microservices. (34)”
+[to create] microservices [(1)](#resources).”
 
 The rest of the concepts/units Kubernetes outlines such as *services*,
 *labels* and *replication controllers* are ways to enhance *pods*.
@@ -109,7 +109,7 @@ server. The DNS server watches the Kubernetes API for new services and
 creates a set of DNS records for each. If DNS has been enabled
 throughout the cluster, then
 all pods* should be able to do name resolution of all services
-automatically (35). The takeaway from this is that you don’t need to
+automatically [(2)](#resources). The takeaway from this is that you don’t need to
 explicitly create links between communicating pods as done natively in
 Docker because Kubernetes does the heavy lifting, so long as you oblige
 by using the networking mechanisms.
@@ -127,7 +127,7 @@ containers across the cluster. In doing so, pods can be thought of as
 any other node in the network with regards to “port management,
 networking, naming, service discovery, load balancing, application
 configuration, and migration” and can create a NAT-free address space;
-this concept is known as the “IP-per-pod” model (36).
+this concept is known as the “IP-per-pod” model [(3)](#resources).
 
 Because Kubernetes applies IP addresses at the pod scope,
 containers within
@@ -135,7 +135,7 @@ a pod share their network namespaces, including their IP address.
 This means that
 containers within a pod can all reach each other’s ports on `localhost`.
 This implies that containers within a pod must coordinate port usage,
-but this is no different than processes in a virtual machine (37).
+but this is no different than processes in a virtual machine [(4)](#resources).
 
 We can achieve the IP-per-pod model via the prescribed network
 requirements imposed by Kubernetes by allocating each host (minion) with
@@ -171,7 +171,7 @@ containers in your stack;
 see [Introduction to container technologies: orchestration and management of container clusters] (/container-technologies-orchestration-clusters/) for a comparison of Kubernetes
 and competing tools.
 
-Although Kubernetes is still at a Beta level and claims not to be
+Although Kubernetes is still at a Beta release level and claims not to be
 production-ready yet, the industry has not strayed away from betting
 on Kubernetes’ future and success. Widespread adoption of Kubernetes appears to
 be based on the fact that
@@ -181,10 +181,22 @@ working on it.
 Aside from the positive publicities in blog posts and community chatter influencing
 its adoption, the community is showing its vested interest:
 as of April 2015, Kubernetes averaged around 400-500 commits per
-week and had almost 300 contributors – a very substantial following.
+week and a very substantial following of almost 300 contributors.
 
 <a name="resources"></a>
 ## Resources
+
+1. <http://www.slideshare.net/timothysc/apache-­coneu>
+2. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/services.md#how-­do-­they-­work>
+3. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/design/networking.md>
+4. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
+
+- [Docker best practices: data and stateful applications]    (/docker-best-practices-data-stateful-applications/)
+- [Docker best practices: container linking]
+(/docker-best-practices-container-linking/)
+- [Introduction to container technologies: orchestration and management of container clusters] (/container-technologies-orchestration-clusters/)
+- [RFC1918 Address Allocation for Private Internets]
+(https://tools.ietf.org/html/rfc1918)
 
 In addition to *best-practices* articles such as this one,
 Rackspace Container Service documentation includes *tutorials* and *references*:
