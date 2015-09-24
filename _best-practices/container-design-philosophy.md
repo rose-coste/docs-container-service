@@ -22,11 +22,11 @@ himself to position all of Docker’s offerings as the preferred
 methodology – as one can imagine in these scenarios, the suggestions
 should be taken with a grain of salt.
 
-According to Docker’s “Best Practices” guide, it is suggested that you
-“run only one process per container [(1)](#resources).” Though it initially seems as a
-simple design decision that you could easily overlook, this concept has
+Docker’s “Best Practices” guide suggests that you
+“run only one process per container [(1)](#resources).” Though it initially seems
+to be simple design decision that you could easily overlook, this concept has
 been met with various opinions,
-discussions and interpretation in the community.
+discussions, and interpretation in the community.
 
 Though you can
 *actually* run more than one process per Docker container, some believe
