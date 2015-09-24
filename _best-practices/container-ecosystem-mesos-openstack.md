@@ -25,7 +25,7 @@ the Platform-as-a-Service offering from the infrastructure layer.
 People tend to think of Mesos and OpenStack as competitors.
 However, Mesos and OpenStack are so different that,
 like the apples versus oranges debate, it isn't completely practical to
-compare them. In fact, one can run Mesos on top of OpenStack; this tends
+compare them. In fact, one can run Mesos on top of OpenStack [(1)](#resources); this tends
 to be a very common operating model but, if you choose to, you can also
 just run Mesos directly on bare metal.
 
@@ -67,6 +67,12 @@ or both.
 
 <a name="resources"></a>
 ## Resources
+
+*Numbered citations in this article*
+
+1. <https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/platform-as-a-service-kubernetesmesos-openstack>
+
+*Other recommended reading*
 
 - <http://mesos.apache.org/>
 - <https://wiki.openstack.org/wiki/Magnum>

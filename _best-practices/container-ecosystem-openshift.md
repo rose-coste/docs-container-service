@@ -57,6 +57,8 @@ in the long run of the “PaaS war”.
 <a name="resources"></a>
 ## Resources
 
+*Numbered citations in this article*
+
 1. <https://www.openshift.com/products/online>
 2. <https://www.heroku.com/>
 3. <https://cloud.google.com/appengine/docs>
@@ -65,6 +67,8 @@ in the long run of the “PaaS war”.
 6. <https://www.openshift.org/>
 7. <https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/openshift-the-state-of-the-art-paas-on-openstack>
 8. <https://blog.openshift.com/openshift-v3-platform-combines-docker-kubernetes-atomic-and-more/>
+
+*Other recommended reading*
 
 - [Container ecosystem: Kubernetes](/container-ecosystem-kubernetes/)
 - [Introduction to container technologies: orchestration and management of container clusters](/container-technologies-orchestration-clusters/)
