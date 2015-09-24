@@ -23,7 +23,7 @@ methodology – as one can imagine in these scenarios, the suggestions
 should be taken with a grain of salt.
 
 According to Docker’s “Best Practices” guide, it is suggested that you
-“run only one process per container (26).” Though it initially seems as a
+“run only one process per container [(1)](#resources).” Though it initially seems as a
 simple design decision that you could easily overlook, this concept has
 been met with various opinions,
 discussions and interpretation in the community.
@@ -55,7 +55,7 @@ Martin Fowler describes the concept in this way:
 > precise definition of this architectural style, there are certain
 > common characteristics around organization around business capability,
 > automated deployment, intelligence in the endpoints, and decentralized
-> control of languages and data (27).
+> control of languages and data [(2)](#resources).
 
 If one is willing to accept this concept when using containers, then
 it is safe to state that microservices are emerging as the pioneered
@@ -65,17 +65,27 @@ intrinsically advocates for loose coupling of dependencies, which aid
 in alleviating the pain points of CI/CD, and ultimately, aid in
 creating better software.
 
-In closing, it is easier from both a mental and technical
-standpoint that one should manage and use Docker containers as
-roles such as an app, database, cache layer, load balancer etc. rather
-than as individual processes (nginx, apache2, sshd etc.) – doing so,
-will highlight the strengths of a container + microservice
+From both a mental and a technical
+standpoint, it is easier to manage and use Docker containers as
+roles rather than by the names of  
+individual processes such as nginx, apache2, or sshd.
+Referring to Docker containers by roles such as
+app, database, cache, or load balancer
+takes advantage of the strengths of a container + microservice
 architecture for your application’s stack.
 
+<a name="resources"></a>
 ## Resources
 
-For detailed background information about
-the Rackspace Container Service,
-follow the links suggested at
-[Introduction to container ecosystems and technologies: suggested reading]
-(/container-technologies-references/).
+1. <https://docs.docker.com/articles/dockerfile_best-practices/#run-only-one-process-per-container>
+
+2. <http://martinfowler.com/articles/microservices.html>
+
+In addition to *best-practices* articles such as this one,
+Rackspace Container Service documentation includes *tutorials* and *references*:
+
+* For step-by-step demonstrations, explore the *tutorials* collection.
+* For detailed descriptions of reference architectures for specific use cases,
+  explore the *references* collection.
+* For discussions of key ideas, recommendations of useful methods and tools, and
+  general advice, explore the *best-practices* collection.

@@ -66,10 +66,10 @@ in those articles, read these sources directly.
 25. <http://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/>
 
 
-26. <https://docs.docker.com/articles/dockerfile_best-­practices/#run-­only-­one-­
+xx 26. <https://docs.docker.com/articles/dockerfile_best-­practices/#run-­only-­one-­
 process-­per-­container>
 
-27. <http://martinfowler.com/articles/microservices.html>
+xx 27. <http://martinfowler.com/articles/microservices.html>
 
 28. <https://docs.docker.com/userguide/dockerimages/>
 
