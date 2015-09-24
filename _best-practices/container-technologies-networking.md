@@ -12,7 +12,7 @@ topics:
 
 Containers become useful when they are connected to each other and to the rest
 of your network. Several tools can help you establish and maintain a network of
-containers. 
+containers.
 
 ## Weaveworks “Weave”
 
@@ -115,8 +115,12 @@ and funding)
 
 ## Resources
 
-For detailed background information about the ecosystem of container technologies
-for the Rackspace Container Service,
-follow the links suggested at
-[Introduction to container ecosystems and technologies: suggested reading]
-(/container-technologies-references/).
+In addition to *best-practices* articles such as this one,
+Rackspace Container Service documentation includes *tutorials* and *references*:
+
+* For step-by-step demonstrations, explore the *tutorials* collection.
+* For detailed descriptions of reference architectures designed
+  for specific use cases,
+  explore the *references* collection.
+* For discussions of key ideas, recommendations of useful methods and tools, and
+  general good advice, explore the *best-practices* collection.
