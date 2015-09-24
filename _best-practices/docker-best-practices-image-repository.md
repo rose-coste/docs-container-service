@@ -71,6 +71,7 @@ running, the only step that you are required to change is to login to
 your private registry as opposed to the central one. That switch is as
 easy as \`docker login http(s)://\<YOUR\_DOMAIN\>:\<PORT\>\`.
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

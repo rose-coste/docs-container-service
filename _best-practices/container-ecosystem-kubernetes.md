@@ -183,6 +183,7 @@ its adoption, the community is showing its vested interest:
 as of April 2015, Kubernetes averaged around 400-500 commits per
 week and had almost 300 contributors – a very substantial following.
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

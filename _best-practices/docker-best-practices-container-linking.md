@@ -118,6 +118,7 @@ An alternative that is becoming an industry standard is to use a
 service registration and discovery tool. You can read more about this at
 [Introduction to container technologies: registration and discovery of container services] (/container-technolgies-registration-discover/).
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

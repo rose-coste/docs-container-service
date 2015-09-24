@@ -113,6 +113,7 @@ In terms of which technology to use:
 
 **Current Recommendation** etcd
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,

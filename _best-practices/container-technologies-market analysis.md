@@ -108,6 +108,7 @@ efficiently, but that a light has been shined on how these varying
 tools function, how they're being received in the community, and how
 they compare with one another.
 
+<a name="resources"></a>
 ## Resources
 
 In addition to *best-practices* articles such as this one,
