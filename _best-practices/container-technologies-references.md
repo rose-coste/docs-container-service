@@ -83,12 +83,12 @@ xx 27. <http://martinfowler.com/articles/microservices.html>
 
 33. <https://github.com/docker/docker/issues/7467>
 
-34. <http://www.slideshare.net/timothysc/apache-­coneu>
+xx 34. <http://www.slideshare.net/timothysc/apache-­coneu>
 
-35. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/services.md#how-­do-­they-­work>
+xx 35. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/services.md#how-­do-­they-­work>
 
-36. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/design/networking.md>
+xx 36. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/design/networking.md>
 
-37. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
+xx 37. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
 
 xx 38. <https://twitter.com/solomonstre/status/492111054839615488>
