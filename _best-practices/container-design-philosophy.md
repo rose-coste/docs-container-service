@@ -67,7 +67,7 @@ creating better software.
 
 From both a mental and a technical
 standpoint, it is easier to manage and use Docker containers as
-roles rather than by the names of  
+roles rather than by the names of
 individual processes such as nginx, apache2, or sshd.
 Referring to Docker containers by roles such as
 app, database, cache, or load balancer
