@@ -2,13 +2,13 @@
 title: Container ecosystem: Kubernetes
 slug: container-ecosystem-kubernetes
 description: Best practices for container ecosystems, powered by the Rackspace Container Service
-author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+author: Mike Metral, Rackspace Product Architect
 topics:
   - docker
   - beginner
 ---
 
-## Container ecosystem: Kubernetes
+# Container ecosystem: Kubernetes
 
 Kubernetes, from Google, is a a tool for managing and orchestrating containers
 within a stack. Kubernetes works with Docker but
@@ -191,6 +191,7 @@ week and a very substantial following of almost 300 contributors.
 3. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/design/networking.md>
 4. <https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/networking.md>
 
+- <http://kubernetes.io/>
 - [Docker best practices: data and stateful applications]    (/docker-best-practices-data-stateful-applications/)
 - [Docker best practices: container linking]
 (/docker-best-practices-container-linking/)
