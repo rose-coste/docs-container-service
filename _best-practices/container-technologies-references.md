@@ -25,7 +25,7 @@ xx 4. <http://en.wikipedia.org/wiki/Cgroups>
 
 xx 5. <http://en.wikipedia.org/wiki/Cgroups#NAMESPACE-ISOLATION>
 
-6. <http://www.projectatomic.io/docs/introduction/>
+xx 6. <http://www.projectatomic.io/docs/introduction/>
 
 7. <https://coreos.com/blog/etcd-2.0-release-first-major-stable-release/>
 
