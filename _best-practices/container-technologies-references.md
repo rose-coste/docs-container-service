@@ -35,23 +35,23 @@ xx 6. <http://www.projectatomic.io/docs/introduction/>
 
 10. <http://gabrtv.github.io/deis-qconsf-2014/#/22>
 
-11. <https://flynn.io/>
+xx 11. <https://flynn.io/>
 
-12. <http://www.centurylinklabs.com/interviews/what-is-flynn-an-open-source-docker-paas/>
+xx 12. <http://www.centurylinklabs.com/interviews/what-is-flynn-an-open-source-docker-paas/>
 
-13. <http://deis.io/overview/>
+xx 13. <http://deis.io/overview/>
 
-14. <http://www.infoq.com/news/2014/06/clocker>
+xx 14. <http://www.infoq.com/news/2014/06/clocker>
 
-15. <https://github.com/mesosphere/marathon>
+xx 15. <https://github.com/mesosphere/marathon>
 
-16. <https://github.com/GoogleCloudPlatform/kubernetes>
+xx 16. <https://github.com/GoogleCloudPlatform/kubernetes>
 
-17. <http://stackoverflow.com/questions/26705201/whats-the-difference-between-apaches-mesos-and-googles-kubernetes>
+xx 17. <http://stackoverflow.com/questions/26705201/whats-the-difference-between-apaches-mesos-and-googles-kubernetes>
 
-18. <https://github.com/mesosphere/kubernetes-mesos/blob/master/README.md>
+xx 18. <https://github.com/mesosphere/kubernetes-mesos/blob/master/README.md>
 
-19. <https://pbs.twimg.com/media/B33GFtNCUAE-vEX.png:large>
+xx 19. <https://pbs.twimg.com/media/B33GFtNCUAE-vEX.png:large>
 
 xx 20. <http://www.infoworld.com/article/2835222/application-virtualization/5-ways-docker-is-fixing-its-networking-woes.html>
 
