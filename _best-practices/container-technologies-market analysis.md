@@ -2,7 +2,7 @@
 title: Introduction to container technologies: market analysis
 slug: container-technologies-market-analysis
 description: Introduction to container technologies, powered by the Rackspace Container Service
-author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+author: Mike Metral, Rackspace Product Architect
 topics:
   - docker
   - beginner
@@ -24,7 +24,7 @@ The container ecosystem is one of the fastest evolving trends in tech
 space that we’ve seen since the virtualized movement of the previous
 decade. As such, it should be made known that the findings and
 opinions expressed in this report are *extremely* time sensitive as a
-small timespan of merely 6 months can and has rapidly shifted what
+small timespan of merely six months can and has rapidly shifted what
 the community has come to think and consider as a viable option.
 
 Lastly, a lot of the information detailed in this report has been a
@@ -90,6 +90,18 @@ implement the tools accordingly, based not only on the requirements you
 would need for you container offering, but more importantly, the
 popularity of the tool and its reception in the strong community that
 serves as its driving force.
+
+CONCLUSION FROM CONTAINER TECHNOLOGIES: DOCKER: INTEGRATE
+
+This report intends to educate and outline recommendations of which
+technologies are currently the best option, but there is no simple answer.
+All of
+these tools are not only young, but are also moving at a rapid pace
+and the scale and ease at which they clearly outline what they’re meant
+to aid with, let alone which technologies they respectfully tend to
+interoperate with, is still to be determined. It is the author’s opinion
+that throughout 2015, the community will make it known which
+technologies are meant to stick and which should be shelved.
 
 CONCLUSION FROM PART2: INTEGRATE
 

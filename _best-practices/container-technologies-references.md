@@ -17,13 +17,13 @@ in those articles, read these sources directly.
 
 1. <http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/>
 
-2. <http://www.forbes.com/sites/benkepes/2014/09/16/the-rumors-were‐true-docker-funding-confirmed-and-40-million-enters-the-coffers/>
+xx 2. <http://www.forbes.com/sites/benkepes/2014/09/16/the-rumors-were‐true-docker-funding-confirmed-and-40-million-enters-the-coffers/>
 
-3. <http://azure.microsoft.com/blog/2014/10/15/new-windows-server-containers-and-azure-support-for-docker/>
+xx 3. <http://azure.microsoft.com/blog/2014/10/15/new-windows-server-containers-and-azure-support-for-docker/>
 
-4. <http://en.wikipedia.org/wiki/Cgroups>
+xx 4. <http://en.wikipedia.org/wiki/Cgroups>
 
-5. <http://en.wikipedia.org/wiki/Cgroups#NAMESPACE-ISOLATION>
+xx 5. <http://en.wikipedia.org/wiki/Cgroups#NAMESPACE-ISOLATION>
 
 6. <http://www.projectatomic.io/docs/introduction/>
 
