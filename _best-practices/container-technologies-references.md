@@ -53,18 +53,17 @@ xx 5. <http://en.wikipedia.org/wiki/Cgroups#NAMESPACE-ISOLATION>
 
 19. <https://pbs.twimg.com/media/B33GFtNCUAE-vEX.png:large>
 
-20. <http://www.infoworld.com/article/2835222/application-virtualization/5-ways-docker-is-fixing-its-networking-woes.html>
+xx 20. <http://www.infoworld.com/article/2835222/application-virtualization/5-ways-docker-is-fixing-its-networking-woes.html>
 
-21. <https://github.com/zettio/weave>
+xx 21. <https://github.com/zettio/weave>
 
-22. <http://www.eweek.com/cloud/weaveworks-raises-5-million-for-docker-container-networking.html>
+xx 22. <http://www.eweek.com/cloud/weaveworks-raises-5-million-for-docker-container-networking.html>
 
-23. <http://www.projectcalico.org/about-calico/>
+xx 23. <http://www.projectcalico.org/about-calico/>
 
-24. <http://www.sdxcentral.com/articles/news/madhu-venugopal-brent-salisbury-opendaylight-starts-open-shop-docker-startup/2014/10/>
+xx 24. <http://www.sdxcentral.com/articles/news/madhu-venugopal-brent-salisbury-opendaylight-starts-open-shop-docker-startup/2014/10/>
 
-25. <http://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/>
-
+xx 25. <http://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/>
 
 xx 26. <https://docs.docker.com/articles/dockerfile_best-­practices/#run-­only-­one-­
 process-­per-­container>
