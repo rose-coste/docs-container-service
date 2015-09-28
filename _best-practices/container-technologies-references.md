@@ -80,7 +80,7 @@ xx 27. <http://martinfowler.com/articles/microservices.html>
 
 32. <http://docs.docker.com/userguide/dockervolumes/>
 
-33. <https://github.com/docker/docker/issues/7467>
+xx 33. <https://github.com/docker/docker/issues/7467>
 
 xx 34. <http://www.slideshare.net/timothysc/apache-­coneu>
 
