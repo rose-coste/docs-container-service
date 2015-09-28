@@ -33,7 +33,7 @@ xx 8. <https://github.com/hashicorp/consul>
 
 xx 9. <http://mesos.apache.org/>
 
-10. <http://gabrtv.github.io/deis-qconsf-2014/#/22>
+xx 10. <http://gabrtv.github.io/deis-qconsf-2014/#/22>
 
 xx 11. <https://flynn.io/>
 

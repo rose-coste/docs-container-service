@@ -68,7 +68,7 @@ principles as the Linux kernel but at a different level of abstraction.
 The Mesos kernel runs on every machine and provides
 APIs for resource management
 and scheduling across entire datacenter and cloud environments
-with applications such as Hadoop, Spark, Kafka, and Elastic Search
+running applications such as Hadoop, Spark, Kafka, and Elastic Search
 [(1)](#resources).
 
 Mesos is a cluster manager that provides efficient isolation of
@@ -80,31 +80,33 @@ are active users and advocates of Mesos.
 
 ## Comparison and recommendations
 
+These tables compare Fleet and Mesos [(2)](#resources):
+
 | Org    | Tool  | Req. Supplied Membership | Basic Task Orchestration | Advanced Task Orchestration | Up to  Hundreds of Hosts | Up to  Thousands of Hosts | Language |
 |--------|-------|--------------------------|--------------------------|-----------------------------|--------------------------|---------------------------|----------|
 | CoreOS | Fleet |             ✓            |             ✓            |                             |             ✓            |                           | Go       |
 | Apache | Mesos |             ✓            |             ✓            |              ✓              |                          |             ✓             | C++      |
 
-**Table 2 -­‐ Service/Resource Scheduling & Management Comparison**
+**Table 1 -­‐ Scheduling and Management Comparison**
 
 | Org    | Tool  | Architecture | Resource Aware | Host Constraints | Host Balancing | Group Affinity | Anti- Affinity | Global Scheduling |
 |--------|-------|--------------|----------------|------------------|----------------|----------------|----------------|-------------------|
 | CoreOS | Fleet | Monolithic   |                |         ✓        |                |        ✓       |        ✓       |         ✓         |
 | Apache | Mesos | Two-level    |        ✓       |         ✓        |        ✓       |                |        ✓       |                   |
 
-**Table 3 – Service / Resource Scheduling and Management Functionality Comparison [(2)](#resources)**
+**Table 2 – Scheduling and Management Functionality Comparison**
 
 In terms of which technology to use:
 
 -   Fleet is new to the scene and has a decent community following, but
     it seems limited in its capabilities with regard to advance
-    scheduling an health metrics. It’s also early in its development.
+    scheduling an health metrics. It’s also early in Fleet's development.
 
 -   Mesos is the front-runner with some heavy names utilizing it today
     in their infrastructure. Also, Mesosphere, the company that is
     commercializing Mesos and is a separate entity from Apache (the
     developer of Mesos) has currently started work on a Mesos
-    framework to support Kubernetes and has gotten a good amount of
+    framework to support Kubernetes [(3)](#resources) and has gotten a good amount of
     traction.
 
 **Current Recommendation** Mesos
@@ -112,10 +114,17 @@ In terms of which technology to use:
 <a name="resources"></a>
 ## Resources
 
+*Numbered citations in this article*
+
 1. <http://mesos.apache.org/>
 
 2. <http://gabrtv.github.io/deis-qconsf-2014/#/22>
 
+3. <https://github.com/kubernetes/kubernetes/issues/6676>
+
+*Other recommended reading*
+
+- <https://www.linux.com/learn/tutorials/788613-understanding-and-using-systemd>
 
 In addition to *best-practices* articles such as this one,
 Rackspace Container Service documentation includes *tutorials* and *references*:
