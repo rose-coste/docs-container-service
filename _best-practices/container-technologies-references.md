@@ -31,7 +31,7 @@ xx 7. <https://coreos.com/blog/etcd-2.0-release-first-major-stable-release/>
 
 xx 8. <https://github.com/hashicorp/consul>
 
-9. <http://mesos.apache.org/>
+xx 9. <http://mesos.apache.org/>
 
 10. <http://gabrtv.github.io/deis-qconsf-2014/#/22>
 
