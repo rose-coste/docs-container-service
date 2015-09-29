@@ -2,7 +2,7 @@
 title: Introduction to container technologies: orchestration and management of container clusters
 slug: container-technologies-orchestration-clusters
 description: Introduction to container technologies, powered by the Rackspace Container Service
-author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+author: Mike Metral
 topics:
   - docker
   - beginner
@@ -308,7 +308,7 @@ place in the ecosystem is still to be determined.
 | Mesosphere      | Marathon   |                  |                              |                                   |                 ✓                 |
 | Google          | Kubernetes |                  |                              |                                   |                 ✓                 |
 
-**Table 4 -‐ Size Comparison of Container Orchestrators & Managers**
+**Table 4 -‐ Size comparison of container orchestrators and managers**
 
 | Org             | Tool       | Cluster State Management | Monitoring &  Healing | Deploy Spec                                 | Allows Docker Dependency & Architectural Mapping | Deployment Method | Language |
 |-----------------|------------|--------------------------|-----------------------|---------------------------------------------|--------------------------------------------------|-------------------|----------|
@@ -321,19 +321,19 @@ place in the ecosystem is still to be determined.
 | Google          | Kubernetes |             ✓            |           ✓           | YAML / JSON                                 |                         ✓                        | API / CLI         |          |
 
 
-**Table 5 -­‐ Functionality Comparison of Container Orchestrators and
-Managers**
+**Table 5 -­‐ Functionality comparison of container orchestrators and
+managers**
 
 ![Strata of the container ecosystem](images/container-ecosystem-layers.jpg)
 
-**Figure 1 -­‐ Strata of Container Ecosystem  [(10)](#resources) **
+**Figure 1 -­‐ Strata of container ecosystem  [(10)](#resources) **
 
 (Note: OpenStack can also be options at layers 2 & 5)
 
 
 ![Deploy and manage code as app in PaaS](images/container-paas-code-as-app.jpg)
 
-**Figure 2 -­‐ Venn Diagram of Container Orchestrator and Managers**
+**Figure 2 -­‐ Venn diagram of container orchestrators and managers**
 
 **Current Recommendation:** Kubernetes
 
