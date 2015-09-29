@@ -38,7 +38,7 @@ for containers at
 [Introduction to container technologies: orchestration and management of container clusters]
 (/container-technologies-orchestration-clusters/).
 
-## Overview
+# Overview
 
 Docker is based on Linux Containers (LXC) [(2)](#resources). LXC is a simplified
 virtualization environment that allows you to run multiple, isolated
