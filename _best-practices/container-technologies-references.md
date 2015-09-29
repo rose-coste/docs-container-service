@@ -76,9 +76,9 @@ xx 27. <http://martinfowler.com/articles/microservices.html>
 
 30. <http://www.projectatomic.io/docs/docker-image-­author-­guidance/>
 
-31. <https://docs.docker.com/userguide/dockervolumes/>
+xx 31. <https://docs.docker.com/userguide/dockervolumes/>
 
-32. <http://docs.docker.com/userguide/dockervolumes/>
+xx 32. <http://docs.docker.com/userguide/dockervolumes/>
 
 xx 33. <https://github.com/docker/docker/issues/7467>
 
