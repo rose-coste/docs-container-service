@@ -70,11 +70,11 @@ process-­per-­container>
 
 xx 27. <http://martinfowler.com/articles/microservices.html>
 
-28. <https://docs.docker.com/userguide/dockerimages/>
+xx 28. <https://docs.docker.com/userguide/dockerimages/>
 
-29. <https://docs.docker.com/articles/dockerfile_best-­‐practices/#build-­cache>
+xx 29. <https://docs.docker.com/articles/dockerfile_best-­‐practices/#build-­cache>
 
-30. <http://www.projectatomic.io/docs/docker-image-­author-­guidance/>
+xx 30. <http://www.projectatomic.io/docs/docker-image-­author-­guidance/>
 
 xx 31. <https://docs.docker.com/userguide/dockervolumes/>
 
