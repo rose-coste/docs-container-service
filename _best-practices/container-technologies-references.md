@@ -15,7 +15,7 @@ and "Container ecosystem"
 series of best-practices articles by Mike Metral. For deeper understanding of the topics introduced
 in those articles, read these sources directly.
 
-1. <http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/>
+xx 1. <http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/>
 
 xx 2. <http://www.forbes.com/sites/benkepes/2014/09/16/the-rumors-were‐true-docker-funding-confirmed-and-40-million-enters-the-coffers/>
 

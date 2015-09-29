@@ -2,7 +2,7 @@
 title: Container ecosystem: Mesos versus OpenStack
 slug: container-ecosystem-mesos-openstack
 description: Best practices for container ecosystems, powered by the Rackspace Container Service
-author: Mike Metral, Rackspace Product Architect
+author: Mike Metral
 topics:
   - docker
   - beginner
