@@ -51,7 +51,7 @@ contributed by MySQL.
 You can upload your own custom images to several repositories, including
 the Docker Hub Registry,
 [CoreOS’ Quay.io] (https://quay.io/), or
-your own private image registry available from a variety of providers.
+your own private image registry available from a variety of providers [(1)](#resources).
 Each image repository has its own method of
 accepting contributions.
 For example, to contribute an image to
@@ -74,7 +74,7 @@ easy as `docker login http(s)://<YOUR_DOMAIN>:<PORT>`.
 
 *Numbered citations in this article*
 
-
+1. <http://www.activestate.com/blog/2014/01/deploying-your-own-private-docker-registry>
 
 *Other recommended reading*
 
