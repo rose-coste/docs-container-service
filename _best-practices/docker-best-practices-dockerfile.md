@@ -2,7 +2,7 @@
 title: Docker best practices: Dockerfile
 slug: docker-best-practices-dockerfile
 description: Docker best practices, powered by the Rackspace Container Service
-author: Mike Metral, <mike.metral@rackspace.com>, Rackspace Product Architect
+author: Mike Metral
 topics:
   - docker
   - beginner
