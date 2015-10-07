@@ -1,9 +1,10 @@
 ---
 title: Introduction to container technologies: container networking
+author: Mike Metral <mike.metral@rackspace.com>
+date: 2015-10-01
 permalink: docs/best-practices/container-technologies-networking/
 description: Introduction to container technologies, powered by the Rackspace Container Service
-author: Mike Metral
-date: 2015-10-01
+docker-versions:
 topics:
   - best-practices
   - planning
@@ -15,7 +16,7 @@ Containers become useful when they are connected to each other and to the rest
 of your network. Several tools can help you establish and maintain a network of
 containers.
 
-## Weaveworks “Weave”
+### Weaveworks “Weave”
 
 Weave "makes the network fit the application, not the other way round,"
 as Weave co-founder Alexis Richardson puts it.
@@ -40,7 +41,7 @@ that Weaveworks recently raised five million dollars in
 Series A venture capital funding, and it makes a compelling argument for considering
 Weave as a viable option.
 
-## CoreOS’s “Flannel”
+### CoreOS’s “Flannel”
 
 Flannel is positioned as CoreOS’ primary way to manage container
 networking via a private mesh network for the containers in a cluster.
@@ -61,7 +62,7 @@ experimental. However, don’t disregard Flannel’s presence in the market, as
 their roadmap looks very optimistic given that CoreOS plans to be a big player in
 the container space.
 
-## Metaswitch’s “Calico”
+### Metaswitch’s “Calico”
 
 Project Calico “integrates seamlessly with the cloud orchestration
 system (such as OpenStack) to enable secure IP communication between
@@ -80,7 +81,7 @@ Calico and Docker, there are no short-term plans to evolve the prototype.
 This has put the drive and initiative to do so into the hands of the
 community.
 
-## SocketPlane’s “SocketPlane”
+### SocketPlane’s “SocketPlane”
 
 Socketplane’s concept is to bring Open vSwitch to the Docker host so that one can
 “have a container that’s going to be able to manage the data path and
@@ -102,7 +103,7 @@ into a sound and promising technology. It has recently been made public
 that SocketPlane was purchased by Docker, Inc and they plan to natively
 integrate SocketPlane with the Docker portfolio [(6)](#resources).
 
-## Comparison
+### Comparison
 
 It is very early in the Docker ecosystem to tell which
 container-networking solution will prevail, let alone which tools are
@@ -116,9 +117,9 @@ seriously evaluate and test.
 and funding)
 
 <a name="resources"></a>
-## Resources
+### Resources
 
-*Numbered citations in this article*
+Numbered citations in this article
 
 1. <http://www.infoworld.com/article/2835222/application-virtualization/5-ways-docker-is-fixing-its-networking-woes.html>
 
@@ -132,7 +133,7 @@ and funding)
 
 6. <http://thenewstack.io/docker-acquires-sdn-technology-startup-socketplane-io/>
 
-*Other recommended reading*
+Other recommended reading
 
 - [Container ecosystem: Kubernetes](/container-ecosystem-kubernetes/)
 
@@ -141,13 +142,12 @@ and funding)
 In addition to *best-practices* articles such as this one,
 Rackspace Container Service documentation includes *tutorials* and *references*:
 
-* For step-by-step demonstrations, explore the *tutorials* collection.
-* For detailed descriptions of reference architectures designed
-  for specific use cases,
+* For step-by-step demonstrations and instructions, explore the *tutorials* collection.
+* For detailed information about how to solve specific issues or work with specific architectures,
   explore the *references* collection.
 * For discussions of key ideas, recommendations of useful methods and tools, and
   general good advice, explore the *best-practices* collection.
 
-## About the author
+### About the author
 
-Mike Metral is a Product Architect at Rackspace. You can follow him in GitHub at https://github.com/metral and at http://www.metralpolis.com/.
+Mike Metral is a Product Architect at Rackspace. He works in the Private Cloud Product organization and is tasked with performing bleeding edge R&D and providing market analysis, design, and strategic advice in the container ecosystem. Mike joined Rackspace in 2012 as a Solutions Architect with the intent of helping Openstack become the open standard for cloud management. At Rackspace, Mike has led the integration effort with strategic partner Rightscale, aided in the assessment, development, and evolution of Rackspace Private Cloud, and served as the Chief Architect of the Service Provider Program. Prior to joining Rackspace, Mike held senior technical roles at Sandia National Laboratories, a subsidiary of Lockheed Martin, performing research and development in cybersecurity with regard to distributed systems, cloud, and mobile computing. Follow Mike on Twitter: @mikemetral.
