@@ -1,9 +1,10 @@
 ---
 title: Introduction to container technologies: orchestration and management of container clusters
+author: Mike Metral <mike.metral@rackspace.com>
+date: 2015-10-01
 permalink: docs/best-practices/container-technologies-orchestration-clusters/
 description: Introduction to container technologies, powered by the Rackspace Container Service
-author: Mike Metral
-date: 2015-10-01
+docker-versions:
 topics:
   - best-practices
   - planning
@@ -19,7 +20,7 @@ swing.
 
 Below is a discussion of notable open-source container orchestration engines and managers, along with a summary of what they each aim to achieve. This is a general introduction to those tools; before you adopt any of them, you should perform your own careful analysis of which option to choose given the use case you intend to fulfill and the scale at you wish to operate.
 
-## Docker’s “Compose”
+### Docker’s “Compose”
 
 Compose, known as “Fig” prior to its acquisition by Docker, Inc, is a simple
 orchestration framework intended to allow the definition of fast,
@@ -36,7 +37,7 @@ Based on use cases, something as simple as Compose may be all that one needs. Ho
 
 The community's reception of Compose has been notably positive, but the practicality of its usage and the lack of ability to create a long-term vision around it tend to minimize the actual legitimacy of adopting it as a container orchestration technology.
 
-## Prime Directive’s “Flynn”
+### Prime Directive’s “Flynn”
 
 Prime Directive labels Flynn as “the product that ops provides to
 developers [(1)](#resources).” They believe that “ops should be a product team, not
@@ -63,7 +64,7 @@ To learn more about working with data and stateful applications in containers, r
 Sponsors and users of Flynn include but are not limited to Coinbase,
 Shopify, and CenturyLink.
 
-## OpDemand’s “Deis”
+### OpDemand’s “Deis”
 
 Deis is an open-source PaaS that facilitates the deployment and
 management of applications. It is built on Docker and CoreOS (including etcd,
@@ -86,7 +87,7 @@ Deis as the front-runner in Heroku-like projects.
 Users of Deis include small to medium businesses and technology companies, but
 no major companies have announced their use of it.
 
-## ClusterHQ’s “Flocker”
+### ClusterHQ’s “Flocker”
 
 Flocker is an open-source data volume and multi-host container manager that supports and works with the file format syntax used by Docker’s Compose (formerly known as Fig). Where Docker naturally shines with applications such as
 frontend or API servers, which utilize shared storage and are replicated
@@ -108,7 +109,7 @@ In addition to the ZFS properties, Flocker imposes a network proxy across
 all of the Flocker nodes to handle container linking, storage mapping
 and user interaction throughout the cluster.
 
-## Cloudsoft’s “Clocker”
+### Cloudsoft’s “Clocker”
 
 Clocker is an open source project that enables users to spin up Docker
 containers in a cloud-agnostic manner without generating excess containers. The project is built on top of Apache Brooklyn, undergoing incubation at the Apache Software Foundation as a tool for modeling, deploying, and managing multi-cloud application software.
@@ -146,7 +147,7 @@ instructions. Clocker then is essentially a blueprint for Brooklyn with
 extra intelligence geared at configuring and managing Docker hosts and
 containers.
 
-## Mesosphere’s “Marathon”
+### Mesosphere’s “Marathon”
 
 Marathon is a cluster-­‐wide init and control system for services in
 cgroups (Linux kernel control groups) or Docker containers. It requires and is based on Apache Mesos
@@ -175,7 +176,7 @@ these particular toolsets.
 Many major companies are using Marathon including Airbnb, eBay,
 Groupon, OpenTable, Paypal, and Yelp.
 
-## Google’s “Kubernetes”
+### Google’s “Kubernetes”
 
 Kubernetes is a system for managing containerized clusters applications
 across multiple hosts. It provides basic mechanisms for deployment,
@@ -204,7 +205,7 @@ production workloads at scale, combined with best-of-breed ideas and
 practices from the community. It is written in Golang and is lightweight,
 modular, portable and extensible [(6)](#resources).
 
-### Kubernetes concepts
+#### Kubernetes concepts
 
 Some of the key ideas behind Kubernetes include:
 
@@ -224,7 +225,7 @@ Some of the key ideas behind Kubernetes include:
   single, stable name and address for a set of pods. Services act like a
   basic load balancer [(7)](#resources).
 
-### Comparing Kubernetes and Mesos
+#### Comparing Kubernetes and Mesos
 Being one of the hottest, if not *the* hottest, technologies in the
 Docker ecosystem right now has forced many comparisons of Kubernetes to
 Mesos, the leader in cluster-oriented development and
@@ -269,7 +270,7 @@ framework by which developers can define a scheduling policy in a
 programmatic fashion. When leveraged together, they provide a
 datacenter with the ability to do both.
 
-### Best fits for Kubernetes
+#### Best fits for Kubernetes
 
 The main take-away for Kubernetes is that right now it is best fit for
 typical webapps and stateless applications and that it is in
@@ -278,7 +279,7 @@ tracked projects on Github, so expect many changes in not only its
 functionality, stability and supported use cases, but also in the number
 of technologies working to become highly interoperable with Kubernetes.
 
-## Docker’s “Swarm”
+### Docker’s “Swarm”
 
 Swarm is a tier aimed to provide a common interface onto the many
 orchestration and scheduling frameworks available. It serves as a
@@ -297,7 +298,7 @@ Docker. It currently does not provide all the
 features of something as comprehensive as Kubernetes and its usage and
 place in the ecosystem is still to be determined.
 
-## Comparison and recommendations
+### Comparison and recommendations
 
 | Org             | Tool       | One  Host (nano) | Up to  Tens of Hosts (micro) | Up to  Hundreds of Hosts (medium) | Up to  Thousands of Hosts (large) |
 |-----------------|------------|------------------|------------------------------|-----------------------------------|-----------------------------------|
@@ -347,9 +348,9 @@ Nate is rebuilding them from https://github.com/rose-coste/whitepapers/tree/mast
 XXXXXXXXX
 
 <a name="resources"></a>
-## Resources
+### Resources
 
-*Numbered citations in this article*
+Numbered citations in this article
 
 1. <https://flynn.io/>
 
@@ -371,7 +372,7 @@ XXXXXXXXX
 
 10. <https://pbs.twimg.com/media/B33GFtNCUAE-vEX.png:large>
 
-*Other recommended reading*
+Other recommended reading
 
 - [Docker best practices: data and stateful applications](/docker-best-practices-data-stateful-applications/)
 
@@ -392,13 +393,12 @@ XXXXXXXXX
 In addition to *best-practices* articles such as this one,
 Rackspace Container Service documentation includes *tutorials* and *references*:
 
-* For step-by-step demonstrations, explore the *tutorials* collection.
-* For detailed descriptions of reference architectures designed
-  for specific use cases,
+* For step-by-step demonstrations and instructions, explore the *tutorials* collection.
+* For detailed information about how to solve specific issues or work with specific architectures,
   explore the *references* collection.
 * For discussions of key ideas, recommendations of useful methods and tools, and
   general good advice, explore the *best-practices* collection.
 
-## About the author
+### About the author
 
-Mike Metral is a Product Architect at Rackspace. You can follow him in GitHub at https://github.com/metral and at http://www.metralpolis.com/.
+Mike Metral is a Product Architect at Rackspace. You can follow him in GitHub at https://github.com/metral and at Mike Metral is a Product Architect at Rackspace. He works in the Private Cloud Product organization and is tasked with performing bleeding edge R&D and providing market analysis, design, and strategic advice in the container ecosystem. Mike joined Rackspace in 2012 as a Solutions Architect with the intent of helping Openstack become the open standard for cloud management. At Rackspace, Mike has led the integration effort with strategic partner Rightscale, aided in the assessment, development, and evolution of Rackspace Private Cloud, and served as the Chief Architect of the Service Provider Program. Prior to joining Rackspace, Mike held senior technical roles at Sandia National Laboratories, a subsidiary of Lockheed Martin, performing research and development in cybersecurity with regard to distributed systems, cloud, and mobile computing. Follow Mike on Twitter: @mikemetral.
