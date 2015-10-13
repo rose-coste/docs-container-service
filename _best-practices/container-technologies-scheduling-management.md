@@ -1,5 +1,5 @@
 ---
-title: Introduction to container technologies: scheduling and management of services and resources
+title: 'Introduction to container technologies: scheduling and management of services and resources'
 author: Mike Metral <mike.metral@rackspace.com>
 date: 2015-10-01
 permalink: docs/best-practices/container-technologies-scheduling-management/
@@ -11,36 +11,19 @@ topics:
 
 *For efficient isolation of resources facilitating different types of workloads and frameworks, use the Mesos distributed systems kernel.*
 
-Within a container cluster, service and resource schedulers and managers
-are tools that are
-aware of the underlying resources available, are capable of placing
-tasks across the cluster in
-a specified and expected manner, abide by rules and constraints, and can
-offer the ability to execute tasks and services.
+Within a container cluster, service and resource schedulers and managers are tools that track the availablity of underlying resources, place tasks across the cluster in a specified and expected manner, abide by rules and constraints, and offer the ability to execute tasks and services.
 
-In the container ecosystem, the need for specialized tools for service and resource scheduling  becomes evident in complex recurring situations such as:
+In the container ecosystem, the need for specialized tools for service and resource scheduling becomes evident in complex recurring situations such as:
 
-- the lifecycle of installing and maintaining the Docker engine and its dependencies
-- setting up the requirements needed by your applications
-- servicing the system you implement for orchestration and management of your container cluster
+- The lifecycle of installing and maintaining the Docker engine and its dependencies
+- Setting up the requirements needed by your applications
+- Servicing the system you implement for orchestration and management of your container cluster
 
-To be clear, service/resource schedulers and managers do just that: they
-allocate the resources needed to execute a job, such as the execution of
-Docker containers.
+To be clear, schedulers allocate the resources needed to execute a job, such as the execution of Docker containers, but it takes more than scheduling to create a Platform-as-a-Service offering. Schedulers assign work to resources; orchestrators ensure that the resources necessary to perform the work are available when needed. For example, if scheduled work requires load balancing, failure recovery, and scaling, an orchestrator creates an environment in which those services are available and then a scheduler can send work to make use of those services.
 
-However, by themselves, resource scheduling technologies should not be seen as options to
-create a Platform-as-a-Service offering or to solely orchestrate a set of containers.
-These tools serve a far
-more basic purpose in respect to Docker services' requirements
-such as load balancing, failure recovery,
-deployment, and scaling;
-these are handled by an actual orchestrator
-sitting on top of your stack.
-
-Therefore, just because they can run any
-service or task from a simple ``hello world`` application to a much more
-complex stack across a cluster to instantiating a Docker container
-on said cluster, this does not mean that they should be fully in charge of
+Therefore, just because a scheduler can run any
+service or task from a simple ``hello world`` application to instantiating a Docker container
+on a cluster, this does not mean that a scheduler should be fully in charge of
 container orchestration.
 
 The technologies described below are the current front-runners in the
