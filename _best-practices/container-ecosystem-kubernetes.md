@@ -123,10 +123,9 @@ Consul, are also viable options. These and others are discussed in
 
 #### Networking
 
-Kubernetes deviates from the default Docker networking model. The goal
-of Kubernetes' networking model is to allow each pod to have an IP in a
+Kubernetes' networking model allows each pod to have an IP in a
 flat networking space. Within that space, the pod can communicate with hosts and
-containers across the cluster. In doing so, pods can be thought of as
+containers across the cluster. In doing so, pods are similar to
 any other node in the network with regards to “port management,
 networking, naming, service discovery, load balancing, application
 configuration, and migration” and can create a NAT-free address space;
@@ -140,18 +139,18 @@ containers within a pod can all reach each other’s ports on `localhost`.
 This implies that containers within a pod must coordinate port usage,
 but this is no different than processes in a virtual machine [(5)](#resources).
 
-We can achieve the IP-per-pod model via the prescribed network
-requirements imposed by Kubernetes by allocating each host (minion) with
+We can achieve the IP-per-pod model via the network
+requirements imposed by Kubernetes by allocating each host (referred to as a *minion*) with
 its own subnet in an overlay network that can enable containers to
 communicate with the host and any other networks available in the
-environment. A common network split is to allocate to the overlay a
-cluster-wide /16 network and then divide that cluster-wide network up
+environment. A common network split is to allocate a
+cluster-wide /16 network to the overlay, and then divide that cluster-wide network
 into a /24 network for each minion in the cluster. Once you
 lay out your network space, you can implement the overlay and configure a
 new bridge for the Docker host to use within it. Some tools that are
 great for this particular purpose, especially in a cloud environment,
 are container-intended networking technologies such as Flannel, Weave,
-SocketPlane and even Open vSwitch. Several of these are discussed in
+SocketPlane and even Open vSwitch. Several of these tools are discussed in
 [Introduction to container technologies: container networking]
 (container-technologies-networking).
 
@@ -164,24 +163,22 @@ an IP address in the 172-dot space. Container IP addresses are managed by the
 Docker host bridge. The effect of this is that containers can only communicate with
 other containers on the same host, as opposed to also being able to
 communicate with other machines in the network. Furthermore, it
-may even be the case that conflicts and confusion arise due to different
-Docker hosts using the same network space and configuration.
+is possible for conflicts and confusion to arise because different
+Docker hosts can use the same network space and configuration.
 
 ### Community status
 
 Kubernetes is the front-runner among tools for managing and orchestrating
-containers in your stack;
-see [Introduction to container technologies: orchestration and management of container clusters] (/container-technologies-orchestration-clusters/) for a comparison of Kubernetes
+containers in your stack.
+See [Introduction to container technologies: orchestration and management of container clusters] (/container-technologies-orchestration-clusters/) for a comparison of Kubernetes
 and competing tools.
 
 Although Kubernetes is still at a Beta release level and claims not to be
-production-ready yet, the industry has not hesitated to bet
-on Kubernetes’ future and success. Widespread adoption of Kubernetes appears to
-be based on the fact that it is a Google product; respect for the impressive contributors
+production-ready yet, it has been widely adopted across the industry. Some of Kubernetes' popularity appears to
+be based on the fact that it is developed by Google; respect for the impressive contributors
 working on Kubernetes appears to be another factor.
 
-In addition to the positive publicity in blog posts and community chatter influencing
-Kubernetes' adoption, the community is showing its vested interest by participating in its development:
+In addition to the positive publicity in blog posts, the community is showing its vested interest by participating in Kubernetes' development:
 as of April 2015, Kubernetes averaged around 400-500 commits per
 week and a very substantial following of almost 300 contributors.
 
