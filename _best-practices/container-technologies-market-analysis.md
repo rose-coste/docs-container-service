@@ -1,5 +1,5 @@
 ---
-title: Introduction to container technologies: market analysis
+title: 'Introduction to container technologies: market analysis'
 author: Mike Metral <mike.metral@rackspace.com>
 date: 2015-10-01
 permalink: docs/best-practices/container-technologies-market-analysis/
@@ -116,11 +116,11 @@ For specific observations and suggestions that you may wish to implement as you 
 
 * [Introduction to container technologies: container operating systems](/container-technologies-operating-systems/)
 
-> To provide the minimal functionality required to deploy applications along with self-updating and healing properties, use container-oriented operating systems CoreOS or Project Atomic.
+> Use container-oriented operating systems CoreOS or Project Atomic for the functionality required to deploy applications along with self-updating and healing properties.
 
 * [Introduction to container technologies: registration and discovery of container services](/container-technologies-registration-discover/)
 
-> For service discovery and shared configuration, use the etcd distributed key/value store.
+> For service discovery and shared configuration, use the etcd distributed key-value store.
 
 * [Introduction to container technologies: scheduling and management of services and resources](/container-technologies-scheduling-management/)
 
