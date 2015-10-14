@@ -1,5 +1,5 @@
 ---
-title: Container ecosystem: Kubernetes
+title: 'Container ecosystem: Kubernetes'
 author: Mike Metral <mike.metral@rackspace.com>
 date: 2015-10-01
 permalink: docs/best-practices/container-ecosystem-kubernetes/
@@ -11,40 +11,37 @@ topics:
 
 *Use Kubernetes with Docker to manage and orchestrate containers in your stack.*
 
-Kubernetes, from Google, is a a tool for managing and orchestrating containers
+Kubernetes, from Google, is a tool for managing and orchestrating containers
 within a stack. Kubernetes works with Docker but
 they differ from each other in key ways.
 
 ### Operating model: the pod
 
-Kubernetes’ own documentation at <http://kubernetes.io/> fully describes its
-purpose and its technical capabilities. However, we want to take the
-opportunity to take a step back and give a synopsis of how Kubernetes
-is intended to be used and where the real need for it in
-your stack may lie.
+Although Kubernetes’ documentation at <http://kubernetes.io/> fully describes its
+purpose and its technical capabilities,
+this article discusses Kubernetes' intended use more objectively and suggests how your stack could benefit from adopting it.
 
-Kubernetes’ added benefit is that it defines a collection of
-primitives to aid in establishing and maintaining a cluster of
-containers. In short, Kubernetes is really just an opinionated model
-of application containers, their dependencies with regards to other
+Kubernetes defines a collection of primitives to aid in establishing and maintaining a cluster of
+containers. Kubernetes is really just an opinionated model
+of application containers, their dependencies with regard to other
 resources, and their lifecycles. 
 
-In Kubernetes, the *pod* is the central concept. 
-A *pod* is a group of applications in the same physical location and with a shared context.
-The *context* of the pod, created by sharing several Linux namespaces, enables applications within the pod to share a hostname, coordinate through message queues,
+In Kubernetes, the pod is the central concept. 
+A pod is a group of applications in the same physical location and with a shared context.
+The context of the pod, created by sharing several Linux namespaces, enables applications within the pod to share a hostname, coordinate through message queues,
 access the same IP and port space, and see each other's processes. Applications within a pod can also share volumes. 
 
 ### Relating Kubernetes to Docker and Mesos
 
 Kubernetes is not Docker. Kubernetes is an orchestration system for Docker containers. In Docker terms, 
-a Kubernetes *pod* "consists of a colocated group of Docker containers with shared volumes [(1)](#resources)."
+a Kubernetes pod "consists of a colocated group of Docker containers with shared volumes [(1)](#resources)."
 
-Kubernetes is not Mesos. Mesos is a scheduling system for containers. In relating Mesos, Docker, and Kubernetes,
+Kubernetes does not function like Mesos, either. Mesos is a scheduling system for containers. In relating Mesos, Docker, and Kubernetes,
 Timothy St. Clair explains that
-*pods* “are the atom of scheduling, and are a group of
+pods “are the atom of scheduling, and are a group of
 containers that
 are scheduled onto the same host…[that] facilitate data sharing and
-communication [by way of] shared mount point’s, [and] network namespace
+communication [by way of] shared mount points, [and] network namespace
 [to create] microservices [(2)](#resources).”
 
 ### Kubernetes-specific functionality
@@ -56,14 +53,13 @@ In some cases, it has its own implementation of a concept that is also used in
 Docker.
 
 Key Kubernetes concepts such as *services*,
-*labels* and *replication controllers* are ways to enhance *pods*.
+*labels* and *replication controllers* are ways to enhance pods.
 Pods also enable users to declare the intended state
 their containers should hold and have Kubernetes enforce. Therefore, it
 is safe to say that Kubernetes does not even know what an application or
-microservice actually is; it only know how you wish to collect and manage your
+microservice actually is; it only knows how you wish to collect and manage your
 containers, including adherence to requirements such as resource
-allocation for containers, affinity, replication, and load balancing.
-Anything more than that is beyond the scope of Kubernetes.
+allocation, affinity, replication, and load balancing.
 
 #### Volumes
 
@@ -77,21 +73,21 @@ Kubernetes to maintain your configuration while it interfaces
 with Docker to actually enable the sharing of volumes.
 
 Where Kubernetes differs strongly from Docker with regard to volumes is in
-*data volume containers*. Docker volumes can be *data volumes* or *data volume containers*. Docker uses data volume containers as a means of sharing data volumes: one container, the data volume container, manages the data volume while other containers can use it. Docker's documentation
+*data volume containers*. Docker volumes can be *data volumes* or *data volume containers*. Docker uses data volume containers as a means of sharing data volumes: one container, the data volume container, manages the data volume while other containers can use it. Docker
 prescribes the data volume containers mechanism as the preferred way to share data among
-containers; various blog posts and articles agree. However, the team behind Kubernetes believes that data volume containers
-are a potential cause of failure in large-scale architectures; they have chosen not to support data volume
+containers. However, the team behind Kubernetes believes that data volume containers
+are a potential cause of failure in large-scale architectures and have chosen not to support data volume
 containers as a type for Kubernetes volumes. The reasoning for this is that data
-volume containers are ultimately passive containers that can be
-very unintuitive to understand from a user perspective, and can create
-corner cases and potentially be problematic for management systems.
+volume containers in Kubernetes are ultimately passive containers that can be
+unintuitive from a user perspective and can create
+corner cases, potentially causing problems for management systems.
 
 For more discussion of Docker volumes
 as *data volumes* and *data volume containers*,
 see
 [Docker best practices: data and stateful applications] (/docker-best-practices-data-stateful-applications/).
 
-#### Discovery
+#### Service discovery
 
 For container service discovery, specifically within a pod, Kubernetes does
 not directly use Docker links as they don’t do well outside of a single
@@ -100,9 +96,9 @@ current capabilities. Instead, to support  the concept of *services*
 that resemble linking, Kubernetes offers two modes of discovery:
 environmental variables and DNS.
 
-If a Kubernetes service exists, then Kubernetes has a backward
-compatible mannerism to create Docker-style link environment variables
-in the container; you can read more about this at
+If a Kubernetes service exists, then Kubernetes has a backward-compatible method
+to create Docker-style link environment variables
+in the container. You can read more about this at
 [Docker best practices: container linking]
 (/docker-best-practices-container-linking/), but
 remember that we believe they’re implicit and hard to work with.
@@ -111,18 +107,18 @@ also create simplified environmental variables with the pattern
 `{SVCNAME}_SERVICE_HOST` and
 `{SVCNAME}_SERVICE_PORT`.
 
-Another recommended way to perform service discovery is by using a DNS
+Another way to perform service discovery with Kubernetes is by using a DNS
 server. The DNS server watches the Kubernetes API for new services and
 creates a set of DNS records for each. If DNS has been enabled
 throughout the cluster, then
 all pods should be able to do name resolution of all services
 automatically [(3)](#resources). The takeaway from this is that you don’t need to
 explicitly create links between communicating pods as you would do natively in
-Docker because Kubernetes does the heavy lifting, so long as you oblige
-by using the networking mechanisms.
+Docker because Kubernetes does the heavy lifting, so long as you
+use the networking mechanisms.
 
-Lastly, do not forget that non-Kubernetes tools such as etcd, Zookeeper, and
-Consul are also viable options. These and others are discussed in
+Lastly, remember that tools outside of Kubernetes, such as etcd, Zookeeper, and
+Consul, are also viable options. These and others are discussed in
 [Introduction to container technologies: orchestration and management of container clusters] (/container-technologies-orchestration-clusters/).
 
 #### Networking
