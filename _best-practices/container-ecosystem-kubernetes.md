@@ -73,7 +73,7 @@ Kubernetes to maintain your configuration while it interfaces
 with Docker to actually enable the sharing of volumes.
 
 Where Kubernetes differs strongly from Docker with regard to volumes is in
-*data volume containers*. Docker volumes can be *data volumes* or *data volume containers*. Docker uses data volume containers as a means of sharing data volumes: one container, the data volume container, manages the data volume while other containers can use it. Docker
+*data volume containers*. Docker volumes can be data volumes or data volume containers. Docker uses data volume containers as a means of sharing data volumes: one container, the data volume container, manages the data volume while other containers can use it. Docker
 prescribes the data volume containers mechanism as the preferred way to share data among
 containers. However, the team behind Kubernetes believes that data volume containers
 are a potential cause of failure in large-scale architectures and have chosen not to support data volume
@@ -83,7 +83,7 @@ unintuitive from a user perspective and can create
 corner cases, potentially causing problems for management systems.
 
 For more discussion of Docker volumes
-as *data volumes* and *data volume containers*,
+as data volumes and data volume containers,
 see
 [Docker best practices: data and stateful applications] (/docker-best-practices-data-stateful-applications/).
 
