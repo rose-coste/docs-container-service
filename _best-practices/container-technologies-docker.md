@@ -169,7 +169,7 @@ Because Docker and the Docker ecosystem are still an emerging field, it is
 worth noting that containers are not intended to be a replacement for all
 virtual machines or bare metal machines, let alone be applied to all use cases.
 Containers are certainly providing a solution to some painful problems
-for developers, operations and devops with regard to the
+for developers, operations and DevOps with regard to the
 lifecycle of applications and managing their environments, but they are most likely to be most immediately helpful in new projects, where work can begin in a containerized environment rather than requiring conversion from other configurations.
 
 Also, there is a lot of competition and overlap
