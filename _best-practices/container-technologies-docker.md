@@ -165,15 +165,15 @@ proper resource allocation:
 
 ### Current container philosophy
 
-Since Docker and the Docker ecosystem is currently a emerging field, it is
+Because Docker and the Docker ecosystem are still an emerging field, it is
 worth noting that containers are not intended to be a replacement for all
 virtual machines or bare metal machines, let alone be applied to all use cases.
 Containers are certainly providing a solution to some painful problems
 for developers, operations and devops with regard to the
 lifecycle of applications and managing their environments, but they are most likely to be most immediately helpful in new projects, where work can begin in a containerized environment rather than requiring conversion from other configurations.
 
-Also, there is a lot of competition and overlap across several of the
-options within the Docker ecosystem and it is difficult to pinpoint which one is better than the other. That being said, not all use cases can be adapted perfectly into containers
+Also, there is a lot of competition and overlap
+within the Docker ecosystem and it is difficult to pinpoint which one is better than the other. That being said, not all use cases can be adapted perfectly into containers
 today. This is particularly true of stateful applications, but work in this space is
 being addressed by several technologies and should be in a much better
 state at a future date. For more on this, read
